@@ -5,7 +5,7 @@
   "author": "Chris Schweda <christopher.schweda@illinois.gov>",
   "scripts": {
     "dev": "node build/dev-server.js",
-    "build": "rimraf ./dist && node build/build.js",
+    "build": "node build/build.js",
     "build:report": "npm run build --report",
     "build:prerender": "npm run routes && npm run build --prerender",
     "server": "serve ./dist -s",

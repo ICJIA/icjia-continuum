@@ -1,13 +1,26 @@
-# ICJIA Grant Accountability and Transparency Act
+# ICJIA Reducing Substance Use Disorders and Related Offending: A Continuum of Evidence-Informed Practices in the Criminal Justice System
 
-> The Grant Accountability and Transparency Act, also known as GATA, was passed by the Illinois Legislature in 2014.
+>There are more than 20 million individuals with substance use disorders (SUDs) in the
+United States (Office of the Surgeon General, 2016), a subset of whom are involved
+with the criminal justice system. Seventy-eight percent of violent crimes and 77
+percent of property crimes involve drugs and/or alcohol (Centers for Disease Control
+and Prevention, 2016). More than half of the 2.2 million individuals housed in U.S.
+prisons and jails meet the clinical diagnosis criteria for SUDs. The government spends
+an estimated $74 billion dollars on court processing, community-supervision, and
+imprisonment of individuals with SUDs (National Center on Addiction and Substance
+Abuse, 2010).
 
-> GATA confirms ICJIA’s commitment to the Federal Uniform Guidance 2 CFR 200, which went into effect in December 2014. The Uniform Guidance already applies to all federal grants and federal pass-through funds. GATA also requires Illinois’ state grants to follow these federal rules for grants which are state funded. This landmark legislations will increase accountability and transparency in the use of grant funds. Once fully implemented, it will unify processes and reduce administrative burdens for state agencies and grantees.
+> Over the past several decades, research and rigorous evaluation has provided insight
+on effective practices for individuals with substance use disorders (SUD) and the
+importance of treatment to reduce criminal justice system involvement. By integrating
+evidence-informed practices, criminal justice agencies and communities can save lives
+and decrease costs associated deep-end criminal justice system and healthcare system
+involvement.
 
 
 ## Site
 
-https://gata.icjia.cloud
+https://continuum.icjia.cloud
 
 ## Build Setup
 
