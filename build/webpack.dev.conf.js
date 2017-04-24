@@ -23,18 +23,12 @@ module.exports = merge(baseWebpackConfig, {
     }),
     // https://github.com/glenjamin/webpack-hot-middleware#installation--usage
     new webpack.HotModuleReplacementPlugin(),
-    new webpack.ProvidePlugin({
-                    $: 'jquery',
-                    jQuery: 'jquery'
-                }),
-
     new webpack.NoEmitOnErrorsPlugin(),
     // https://github.com/ampedandwired/html-webpack-plugin
     new HtmlWebpackPlugin({
-       appMountId: 'app',
       filename: 'index.html',
-      template: 'index.ejs',
-      inject: false
+      template: 'index.html',
+      inject: true
     }),
     new FriendlyErrorsPlugin()
   ]

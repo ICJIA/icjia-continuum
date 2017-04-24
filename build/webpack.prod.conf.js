@@ -8,14 +8,6 @@ var CopyWebpackPlugin = require('copy-webpack-plugin')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
 var OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin')
-var moment = require('moment-timezone');
-var PrerenderSpaPlugin = require('prerender-spa-plugin');
-var routesToPrerender = require('../src/routesToPrerender');
-
-// console.log(routesToPrerender)
-
-
-
 
 var env = process.env.NODE_ENV === 'testing'
   ? require('../config/test.env')
@@ -51,7 +43,11 @@ var webpackConfig = merge(baseWebpackConfig, {
     }),
     // Compress extracted CSS. We are using this plugin so that possible
     // duplicated CSS from different components can be deduped.
-    new OptimizeCSSPlugin(),
+    new OptimizeCSSPlugin({
+      cssProcessorOptions: {
+        safe: true
+      }
+    }),
     // generate dist index.html with correct asset hash for caching.
     // you can customize output by editing /index.html
     // see https://github.com/ampedandwired/html-webpack-plugin
@@ -59,16 +55,10 @@ var webpackConfig = merge(baseWebpackConfig, {
       filename: process.env.NODE_ENV === 'testing'
         ? 'index.html'
         : config.build.index,
-         appMountId: 'app',
-      template: 'index.ejs',
-      bannerDate: moment().tz("America/Chicago").format("dddd, MMMM Do YYYY, h:mm:ss a"),
-      bannerGit: "https://github.com/ICJIA/icjia-continuum",
-      bannerTitle: "ICJIA: Reducing Substance Use Disorders and Related Offending: A Continuum of Evidence-Informed Practices in the Criminal Justice System",
-      bannerContact: "christopher.schweda@illinois.gov",
-      googleAnalytics: false,
-      inject: false,
+      template: 'index.html',
+      inject: true,
       minify: {
-        removeComments: false,
+        removeComments: true,
         collapseWhitespace: true,
         removeAttributeQuotes: true
         // more options:
@@ -91,10 +81,6 @@ var webpackConfig = merge(baseWebpackConfig, {
         )
       }
     }),
-    new webpack.ProvidePlugin({
-                   $: 'jquery',
-                   jQuery: 'jquery'
-               }),
     // extract webpack runtime and module manifest to its own file in order to
     // prevent vendor hash from being updated whenever app bundle is updated
     new webpack.optimize.CommonsChunkPlugin({
@@ -108,19 +94,7 @@ var webpackConfig = merge(baseWebpackConfig, {
         to: config.build.assetsSubDirectory,
         ignore: ['.*']
       }
-    ]),
-
-    //
-    new CopyWebpackPlugin([
-            {
-              from: path.resolve(__dirname, '../_redirects'),
-              to: './' },
-        ]),
-    new CopyWebpackPlugin([
-                {
-                  from: path.resolve(__dirname, '../.htaccess'),
-                  to: './' },
-            ]),
+    ])
   ]
 })
 
@@ -145,15 +119,6 @@ if (config.build.productionGzip) {
 if (config.build.bundleAnalyzerReport) {
   var BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
   webpackConfig.plugins.push(new BundleAnalyzerPlugin())
-}
-
-if (config.build.prerender) {
-
-  webpackConfig.plugins.push(new PrerenderSpaPlugin(
-      // Absolute path to compiled SPA
-      path.join(__dirname, '../dist'),
-      routesToPrerender
-    ))
 }
 
 module.exports = webpackConfig

@@ -1,126 +1,6 @@
-/// Removes the search bar and pagination in Datatables //////////////////////////////////////////
-// See: https://legacy.datatables.net/ref#sDom
-exports.dtConfig = {
-  "pageLength": 100,
-    "columnDefs": [{
+import moment from 'moment';
 
-        "targets": '_all',
-        "createdCell": function(td, cellData, rowData, row, col) {
-            // Add commas to large numbers
-            $(td).html($(td).html().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,"))
-        }
-    }],
-    "sDom": '<"top">rt<"bottom"><"clear">'
-}
-
-
-
-
-// Construct HTML table from chart object //////////////////////////////////////////////////////
-exports.renderTable = function(hc, tableId) {
-    let series = '<th></th>'
-    let row = '<tr>';
-    let tSeries = '';
-    // read chart data --> convert to table
-    for (let i = 0; i < hc.series.length; i++) {
-        series = series + `<th> ${hc.series[i].name}</th>`
-    }
-
-    for (let i = 0; i < hc.series[0].data.length; i++) {
-        row = row + `<td class="strong">${hc.xAxis.categories[i]}</td>`
-        for (let j = 0; j < hc.series.length; j++) {
-
-            let tmp = hc.series[j].data[i]
-            row = row + `<td> ${tmp} </td>`
-        }
-        row = row + `</tr>`
-    }
-
-
-    // ES6 template literal: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
-    let hcTable = ''
-    return hcTable = `
-                            <table id="${tableId}" class="ordered striped">
-                                <thead>
-                                    <tr>
-                                        ${series}
-                                    </tr>
-                                </thead>
-                                    <tbody>
-                                    ${row}
-                                    </tbody>
-                            </table> `
-
-
-}
-
-
-// Generate unique ID ////////////////////////////////////////////////////////////////////////
-
-exports.guid = function() {
-    // generate unique id
-    function s4() {
-        return Math.floor((1 + Math.random()) * 0x10000)
-            .toString(16)
-            .substring(1);
-    }
-    return s4() + s4() + s4() + s4() + s4() + s4();
-}
-
-
-
-
-
-// Determine size of object  /////////////////////////////////////////////////////////////////
-
-exports.objSize = function(obj) {
-    var size = 0,
-        key;
-    for (key in obj) {
-        if (obj.hasOwnProperty(key)) size++;
-    }
-    return size;
-}
-
-
-
-
-
-// Parse string as boolean //////////////////////////////////////////
-
-exports.parseBool = function(str) {
-    // console.log(typeof str);
-    // strict: JSON.parse(str)
-
-    if (str == null)
-        return false;
-
-    if (typeof str === 'boolean') {
-        return (str === true);
-    }
-
-    if (typeof str === 'string') {
-        if (str == "")
-            return false;
-
-        str = str.replace(/^\s+|\s+$/g, '');
-        if (str.toLowerCase() == 'true' || str.toLowerCase() == 'yes')
-            return true;
-
-        str = str.replace(/,/g, '.');
-        str = str.replace(/^\s*\-\s*/g, '-');
-    }
-
-    // var isNum = string.match(/^[0-9]+$/) != null;
-    // var isNum = /^\d+$/.test(str);
-    if (!isNaN(str))
-        return (parseFloat(str) != 0);
-
-    return false;
-}
-
-
-exports.stripTags =  function(str) {
+function stripTags (str) {
   // strip tags
   str = str.replace(/<\/?[^>]+>/g, '');
   // strip carriage returns
@@ -128,7 +8,7 @@ exports.stripTags =  function(str) {
   return str
 }
 
-exports.truncateString = function(str, num) {
+function truncateString (str, num) {
 
   if (str === undefined) return
 
@@ -143,7 +23,7 @@ function stripCarriageReturns (str) {
   return str.replace(/[\n\r]/g, '');
 }
 
-exports.componentToRouterPath = function (c) {
+function componentToRouterPath (c) {
   String.prototype.camelCaseToDashed = function(){
     return this.replace(/([a-z])([A-Z])/g, '$1-$2').toLowerCase();
   }
@@ -153,13 +33,13 @@ exports.componentToRouterPath = function (c) {
   return path
 }
 
-exports.generateRoutes = function (arr) {
+function generateRoutes (arr) {
   // generates routes for routes.js and injects metadata about each page
   const _REDIRECT_ROUTE = {
       path: '/*',
       title: 'Redirect',
       type: 'redirect',
-      created: new Date(),
+      created: moment().format('MMM Do YYYY'),
       status: 'live',
       name: 'Redirect',
       redirect: '/'
@@ -168,8 +48,8 @@ exports.generateRoutes = function (arr) {
   let _r = [];
   let _obj = {}
   let _name = 'NoNameSpecified'
-  let _created = new Date(String().replace(/-/g, "/"))
-  let _expired = new Date(String('2999-12-31').replace(/-/g, "/"))
+  let _created = moment().format('MMM Do YYYY')
+  let _expired = moment().add(999, 'years').calendar()
   let _title = 'No Title Specified'
   let _description = 'No Description specified'
   let _status = 'live'
@@ -254,3 +134,11 @@ exports.generateRoutes = function (arr) {
   return _r
 
 }
+
+export {
+          generateRoutes,
+          componentToRouterPath,
+          stripCarriageReturns,
+          truncateString,
+          stripTags
+        }

@@ -1,44 +1,31 @@
-<template>
-  <div id="myNav">
-    <nav class="light-blue lighten-1" role="navigation">
-     <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a>
-       <ul class="right hide-on-med-and-down">
-         <li><a href="#">Navbar Link</a></li>
-       </ul>
+<template lang="html">
+  <div>
+    <v-toolbar>
+      <v-toolbar-side-icon @click.native.stop="sidebar = !sidebar" />
+      <v-toolbar-logo>Toolbar</v-toolbar-logo>
+    </v-toolbar>
+    <v-sidebar left fixed drawer v-model="sidebar">
+      <v-list>
+        <v-list-item v-for="i in 3" :key="i">
+          <v-list-tile>
+            <v-list-tile-title>Item {{ i }}</v-list-tile-title>
+          </v-list-tile>
+        </v-list-item>
+      </v-list>
+    </v-sidebar>
 
-       <ul id="nav-mobile" class="side-nav">
-         <li><a href="#">Navbar Link</a></li>
-       </ul>
-       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-     </div>
-   </nav>
   </div>
 </template>
 
 <script>
-
 export default {
-    mounted() {
-
-
-
-    },
-    components: {
-
-    },
-
-    name: 'Navbar',
-
-    data() {
-        return {
-
-        }
+  data () {
+    return {
+      sidebar: false
     }
+  },
 }
 </script>
 
-
-<style scoped>
-
+<style lang="css">
 </style>
-s
