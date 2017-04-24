@@ -22,7 +22,13 @@ module.exports = {
     extensions: ['.js', '.vue', '.json'],
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
-      '@': resolve('src')
+      '@': resolve('src'),
+      'node_modules': resolve('node_modules'),
+      'meta': resolve('src/meta'),
+      'components': resolve('src/components'),
+      'utils': resolve('src/utils'),
+      'scss': resolve('src/scss'),
+      'views': resolve ('src/views')
     }
   },
   module: {
@@ -40,15 +46,27 @@ module.exports = {
       {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
         loader: 'url-loader',
-        options: {
+        query: {
           limit: 10000,
           name: utils.assetsPath('img/[name].[hash:7].[ext]')
         }
       },
       {
+        test: /jquery\.js$/,
+        loader: "expose-loader?$!expose-loader?jQuery"
+      },
+      {
+        test: /lodash\.js$/,
+        loader: "expose-loader?_!expose-loader?lodash"
+      },
+      {
+      test: /materialize\.js$/,
+      loader: "expose-loader?Materialize!expose-loader?materialize"
+    },
+      {
         test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
         loader: 'url-loader',
-        options: {
+        query: {
           limit: 10000,
           name: utils.assetsPath('fonts/[name].[hash:7].[ext]')
         }
