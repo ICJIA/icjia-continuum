@@ -27,4 +27,9 @@ export default {
 </script>
 
 <style lang="css">
+
+.navbar-toggler-right {
+  
+    bottom: 5px;
+}
 </style>
