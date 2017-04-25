@@ -12,6 +12,7 @@ var moment = require('moment-timezone');
 var PrerenderSpaPlugin = require('prerender-spa-plugin');
 var routesToPrerender = require('../src/routesToPrerender');
 
+
 var env = process.env.NODE_ENV === 'testing'
   ? require('../config/test.env')
   : config.build.env
@@ -103,6 +104,7 @@ var webpackConfig = merge(baseWebpackConfig, {
         ignore: ['.*']
       }
     ]),
+
     new CopyWebpackPlugin([
             {
               from: path.resolve(__dirname, '../_redirects'),

@@ -133,7 +133,8 @@ function generateRoutes (arr) {
 
   });
   _r.push(_REDIRECT_ROUTE)
-  //console.table(_r)
+  // Be sure to remove this console.table for Internet Explorer
+  console.table(_r)
   return _r
 
 }

@@ -1,8 +1,8 @@
 <template lang="html">
-  <section style="margin-top: 4px;" id="conclusion">
+  <section style="margin-top: 4px;" id="section-2">
     <div class="container">
   <div class="row">
-  	<div class="col-md-12">
+  	<div class="col-md-12 text-center">
   		<h1>The Takeaway</h1>
   	</div>
   </div>
