@@ -30,6 +30,8 @@ npm run build --report
 
 https://sudcontinuum.icjia.cloud/
 
+## Additional Information
+
 For information on Vue, see: https://vuejs.org/
 
 For information on Webpack, see: https://webpack.js.org/
