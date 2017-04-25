@@ -2,10 +2,10 @@ module.exports = {
   meta: [
     { charset: 'utf-8' },
     { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-    { property: "og:title", content: "ICJIA Grant Accountability & Transparency Act" },
-    { property: "og:site_name", content: "ICJIA Grant Accountability & Transparency Act" },
-    { property: "og:url", content: "https://gata.icjia.cloud" },
-    { property: "og:description", content: "ICJIA Grant Accountability & Transparency Act. "},
+    { property: "og:title", content: "ICJIA Promising Practices Continuum" },
+    { property: "og:site_name", content: "ICJIA Promising Practices Continuum" },
+    { property: "og:url", content: "https://sudcontinuum.icjia.cloud" },
+    { property: "og:description", content: "ICJIA Promising Practices Continuum. "},
     { property: "fb:app_id", content: "963916987072512" },
     { property: "og:type", content: "article" },
     { property: "og:locale", content: "en_US" },
@@ -22,7 +22,7 @@ module.exports = {
     {rel: "icon", type: "image/png", sizes: "16x16",  href: '/static/icons/favicon-16x16.png?v=1440170181'}
     ],
     // if no subcomponents specify a metaInfo.title, this title will be used
-    title: 'ICJIA Grant Accountability & Transparency Act',
+    title: 'ICJIA Promising Practices Continuum',
     // all titles will be injected into this template
-    titleTemplate: 'ICJIA GATA | %s'
+    titleTemplate: 'ICJIA Continuum | %s'
   }
