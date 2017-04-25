@@ -1,5 +1,6 @@
 // see http://vuejs-templates.github.io/webpack for documentation.
 var path = require('path')
+var moment = require('moment-timezone')
 
 module.exports = {
   build: {
@@ -20,7 +21,11 @@ module.exports = {
     // `npm run build --report`
     // Set to `true` or `false` to always turn it on or off
     bundleAnalyzerReport: process.env.npm_config_report,
-    prerender: process.env.npm_config_prerender
+    prerender: process.env.npm_config_prerender,
+    bannerDate: moment().tz("America/Chicago").format("dddd, MMMM Do YYYY, h:mm:ss a"),
+    bannerGit: "https://github.com/ICJIA/icjia-continuum",
+    bannerTitle: "ICJIA Promising Practices Continuum",
+    bannerContact: "christopher.schweda@illinois.gov",
   },
   dev: {
     env: require('./dev.env'),
