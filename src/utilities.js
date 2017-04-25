@@ -122,7 +122,7 @@ function generateRoutes (arr) {
 
   });
   _r.push(_REDIRECT_ROUTE)
-  console.table(_r)
+  //console.table(_r)
   return _r
 
 }
