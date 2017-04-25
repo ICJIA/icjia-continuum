@@ -1,6 +1,17 @@
 
 import moment from 'moment'
 
+function titleCase(str) {
+     let words = str.toLowerCase().split(' ');
+
+     for(var i = 0; i < words.length; i++) {
+          let letters = words[i].split('');
+          letters[0] = letters[0].toUpperCase();
+          words[i] = letters.join('');
+     }
+     return words.join(' ');
+}
+
 function stripCarriageReturns (str) {
   return str.replace(/[\n\r]/g, '');
 }
@@ -132,7 +143,8 @@ export {
   generateRoutes,
   stripTags,
   componentToRouterPath,
-  stripCarriageReturns
+  stripCarriageReturns,
+  titleCase
 
 
 }

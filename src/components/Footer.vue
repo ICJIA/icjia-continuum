@@ -1,45 +1,51 @@
-<template lang="html">
-  <footer style="margin-top: 4px;">
-    <div class="container">
-  <div class="row">
-  	<div class="col-md-12">
-  		<h1>The Takeaway</h1>
-  	</div>
+<template>
+  <div >
+    <!-- TEMPLATE START -->
+    <footer class="text-center" id="footer">
+
+          <div class="footer-text">© {{getFullYear()}}
+              <a href="http://www.icjia.state.il.us">Illinois Criminal Justice Information Authority</a>
+            &nbsp;&nbsp;|&nbsp;&nbsp;
+            <i class="fa fa-github" aria-hidden="true"></i>
+                &nbsp;&nbsp;<a href="https://github.com/ICJIA/icjia-continuum">View on GitHub</a>
+              </div>
+
+
+    </footer>
   </div>
-</div>
-
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu purus non turpis vestibulum finibus. Fusce facilisis, erat eu mollis blandit, urna felis hendrerit purus, tempus congue urna mi aliquam nisi. Nullam dictum nibh erat, id scelerisque nunc pharetra id. Praesent ut fringilla turpis, sed sodales turpis. Duis ultrices volutpat lacinia. Vestibulum sodales varius scelerisque. Phasellus vulputate lobortis leo, ac consequat justo posuere quis. Vestibulum rhoncus enim orci, quis maximus.
-        </div>
-
-        <div class="col-md-4">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu purus non turpis vestibulum finibus. Fusce facilisis, erat eu mollis blandit, urna felis hendrerit purus, tempus congue urna mi aliquam nisi. Nullam dictum nibh erat, id scelerisque nunc pharetra id. Praesent ut fringilla turpis, sed sodales turpis. Duis ultrices volutpat lacinia. Vestibulum sodales varius scelerisque. Phasellus vulputate lobortis leo, ac consequat justo posuere quis. Vestibulum rhoncus enim orci, quis maximus.
-        </div>
-
-        <div class="col-md-4">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu purus non turpis vestibulum finibus. Fusce facilisis, erat eu mollis blandit, urna felis hendrerit purus, tempus congue urna mi aliquam nisi. Nullam dictum nibh erat, id scelerisque nunc pharetra id. Praesent ut fringilla turpis, sed sodales turpis. Duis ultrices volutpat lacinia. Vestibulum sodales varius scelerisque. Phasellus vulputate lobortis leo, ac consequat justo posuere quis. Vestibulum rhoncus enim orci, quis maximus.
-        </div>
-
-      </div>
-
-    </div>
-
-
-
-
-
-  </footer>
-
-
 </template>
 
 <script>
+
 export default {
+
+  components: {
+
+  },
+  name: 'Footer',
+  methods: {
+
+      getFullYear: function () {
+        var today = new Date();
+        return today.getFullYear();
+      }
+
+  },
+  data () {
+    return {
+
+    }
+  }
 }
 </script>
 
-<style lang="css" scoped>
+
+<style scoped>
+
+a {color: #eee}
+footer {border-top: 0px solid #bbb;
+  padding-top: 20px; padding-bottom: 20px; background-color: #777; color: #eee;}
+.footer-text {font-size:13px; font-weight: 700}
+
 
 </style>
