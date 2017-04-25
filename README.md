@@ -1,9 +1,8 @@
-# Promising Practices In Criminal Justice: Assisting Individuals with Substance Use DISORDERS
+# Promising Practices In Criminal Justice: Assisting Individuals with Substance Use Disorders
 
 > There are currently an estimated 2.3 million individuals in U.S. prisons and jails, with 1.5 million meeting DSM-IV medical criteria for addiction (NIDA, 2014; CASA, 2010). Further, approximately 70 percent of state and 64 percent of federal inmates reported regular drug use prior to imprisonment; about 25 percent of violent offenders in state prisons committed their offenses under the influence of drugs (NIDA, 2014).
 
-> A VueJS project.
-
+https://sudcontinuum.icjia.cloud/
 
 
 ## Build Setup
@@ -26,9 +25,6 @@ npm run build --report
 
 ```
 
-## Site
-
-https://sudcontinuum.icjia.cloud/
 
 ## Additional Information
 
