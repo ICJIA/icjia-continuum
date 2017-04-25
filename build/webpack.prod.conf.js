@@ -8,6 +8,9 @@ var CopyWebpackPlugin = require('copy-webpack-plugin')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
 var OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin')
+var moment = require('moment-timezone');
+var PrerenderSpaPlugin = require('prerender-spa-plugin');
+var routesToPrerender = require('../src/routesToPrerender');
 
 var env = process.env.NODE_ENV === 'testing'
   ? require('../config/test.env')
@@ -114,6 +117,17 @@ if (config.build.productionGzip) {
       minRatio: 0.8
     })
   )
+}
+
+if (config.build.prerender) {
+
+  webpackConfig.plugins.push(new PrerenderSpaPlugin(
+      // Absolute path to compiled SPA
+      path.join(__dirname, '../dist'),
+      routesToPrerender
+      // List of routes to prerender
+      // ["/"]
+    ))
 }
 
 if (config.build.bundleAnalyzerReport) {

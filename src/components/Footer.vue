@@ -1,7 +1,7 @@
 <template lang="html">
-  <nav>
-    Navbar
-  </nav>
+  <footer>
+    Footer
+  </footer>
 </template>
 
 <script>

@@ -1,11 +1,11 @@
-var utilities = require("@/utilities");
-
+import { generateRoutes, componentToRouterPath } from './utilities'
 const views = [
     {
         path: '/',
-        name: 'Home',
         component: require('./views/Home.vue')
     },
+
 ]
 
-export default utilities.generateRoutes(views)
+
+export default generateRoutes(views)

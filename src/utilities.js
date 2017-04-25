@@ -1,23 +1,5 @@
-import moment from 'moment';
 
-function stripTags (str) {
-  // strip tags
-  str = str.replace(/<\/?[^>]+>/g, '');
-  // strip carriage returns
-  str = str.replace(/[\n\r]/g, '');
-  return str
-}
-
-function truncateString (str, num) {
-
-  if (str === undefined) return
-
-  if (str.length <= num) {
-    return str;
-  } else {
-    return str.slice(0, num > 3 ? num - 3 : num) + '...';
-  }
-}
+import moment from 'moment'
 
 function stripCarriageReturns (str) {
   return str.replace(/[\n\r]/g, '');
@@ -33,13 +15,22 @@ function componentToRouterPath (c) {
   return path
 }
 
+
+function stripTags (str) {
+  // strip tags
+  str = str.replace(/<\/?[^>]+>/g, '');
+  // strip carriage returns
+  str = str.replace(/[\n\r]/g, '');
+  return str
+}
+
 function generateRoutes (arr) {
   // generates routes for routes.js and injects metadata about each page
   const _REDIRECT_ROUTE = {
       path: '/*',
       title: 'Redirect',
       type: 'redirect',
-      created: moment().format('MMM Do YYYY'),
+      created: moment('2017-04-25').format('MM/DD/YYYY'),
       status: 'live',
       name: 'Redirect',
       redirect: '/'
@@ -48,8 +39,8 @@ function generateRoutes (arr) {
   let _r = [];
   let _obj = {}
   let _name = 'NoNameSpecified'
-  let _created = moment().format('MMM Do YYYY')
-  let _expired = moment().add(999, 'years').calendar()
+  let _created = moment().format('MM/DD/YYYY')
+  let _expired = moment('2017-04-25').add(999, 'Years').calendar()
   let _title = 'No Title Specified'
   let _description = 'No Description specified'
   let _status = 'live'
@@ -78,13 +69,14 @@ function generateRoutes (arr) {
         }
 
         if ('created' in eachObj["component"].pageData) {
-          _obj.created = new Date(String(eachObj["component"].pageData.created).replace(/-/g, "/"))
+          // _obj.created = new Date(String(eachObj["component"].pageData.created).replace(/-/g, "/"))
+          _obj.created = moment(eachObj["component"].pageData.created).format('MM/DD/YYYY')
         } else {
           _obj.created = _created
         }
 
         if ('expired' in eachObj["component"].pageData) {
-          _obj.expired = new Date(String(eachObj["component"].pageData.expired).replace(/-/g, "/"))
+          _obj.expired = moment(eachObj["component"].pageData.expired).format('MM/DD/YYYY')
 
         } else {
           _obj.expired = _expired
@@ -136,9 +128,11 @@ function generateRoutes (arr) {
 }
 
 export {
-          generateRoutes,
-          componentToRouterPath,
-          stripCarriageReturns,
-          truncateString,
-          stripTags
-        }
+
+  generateRoutes,
+  stripTags,
+  componentToRouterPath,
+  stripCarriageReturns
+
+
+}

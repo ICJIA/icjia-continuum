@@ -1,6 +1,6 @@
 <template lang="html">
   <section>
-    Home page.
+    Home view
   </section>
 </template>
 
