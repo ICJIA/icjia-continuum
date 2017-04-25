@@ -7,14 +7,15 @@
       <div class="collapse navbar-collapse " id="navbarCollapse">
         <ul class="navbar-nav mr-auto" >
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="javascript:void(0);" v-scroll-to="'#section-0'">Home </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="javascript:void(0);" v-scroll-to="{el: '#section-1',offset: -50}">Section 1</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
+            <a class="nav-link" href="javascript:void(0);" v-scroll-to="{el: '#section-2',offset: -50}">Section 2</a>
           </li>
+
         </ul>
 
       </div>
@@ -29,7 +30,7 @@ export default {
 <style lang="css">
 
 .navbar-toggler-right {
-  
+
     bottom: 5px;
 }
 </style>
