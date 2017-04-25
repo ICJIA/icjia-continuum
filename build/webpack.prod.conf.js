@@ -58,15 +58,20 @@ var webpackConfig = merge(baseWebpackConfig, {
       filename: process.env.NODE_ENV === 'testing'
         ? 'index.html'
         : config.build.index,
-      template: 'index.html',
-      inject: true,
-      minify: {
-        removeComments: true,
-        collapseWhitespace: true,
-        removeAttributeQuotes: true
-        // more options:
-        // https://github.com/kangax/html-minifier#options-quick-reference
-      },
+        template: 'index.html',
+        bannerDate: moment().tz("America/Chicago").format("dddd, MMMM Do YYYY, h:mm:ss a"),
+        bannerGit: "https://github.com/ICJIA/icjia-gata",
+        bannerTitle: "ICJIA Grant Accountability & Transparency Act",
+        bannerContact: "christopher.schweda@illinois.gov",
+        googleAnalytics: true,
+        inject: true,
+        minify: {
+          removeComments: false,
+          collapseWhitespace: true,
+          removeAttributeQuotes: true
+          // more options:
+          // https://github.com/kangax/html-minifier#options-quick-reference
+        },
       // necessary to consistently work with multiple chunks via CommonsChunkPlugin
       chunksSortMode: 'dependency'
     }),
@@ -97,7 +102,17 @@ var webpackConfig = merge(baseWebpackConfig, {
         to: config.build.assetsSubDirectory,
         ignore: ['.*']
       }
-    ])
+    ]),
+    new CopyWebpackPlugin([
+            {
+              from: path.resolve(__dirname, '../_redirects'),
+              to: './' },
+        ]),
+    new CopyWebpackPlugin([
+                {
+                  from: path.resolve(__dirname, '../.htaccess'),
+                  to: './' },
+            ]),
   ]
 })
 
