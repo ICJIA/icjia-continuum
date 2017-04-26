@@ -3,7 +3,7 @@
     <div class="container">
   <div class="row">
   	<div class="col-md-12 text-center">
-  		<h1>The Takeaway</h1>
+      <h1 class="head-splash" style="">The Takeaway</h1>
   	</div>
   </div>
 </div>
@@ -41,5 +41,5 @@ export default {
 </script>
 
 <style lang="css" scoped>
-
+h1 {color: #fff}
 </style>

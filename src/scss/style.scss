@@ -222,6 +222,9 @@ header {
 	}
 
 	@include MQ(L) {
+
+		h1.splash-head {color: #666; font-size: 100px; letter-spacing: .0001em; line-height: 105px;margin-top: 50px; margin-bottom:50px;}
+
 		width: 60px;
 		height: 60px;
 		left: 50%;
@@ -449,12 +452,12 @@ section#section-2 {
 		color: $font-light;
 }
 
-section#section-2 h1 {
-	text-align: center;
-	margin-bottom: 90px;
-	font-size: 100px;
-
-}
+// section#section-2 h1 {
+// 	text-align: center;
+// 	margin-bottom: 90px;
+// 	font-size: 100px;
+//
+// }
 
 .section-title {
 		font-family: 'Lato', sans-serif;
@@ -522,4 +525,34 @@ section#section-2 h1 {
       text-align: right;
     }
   }
+}
+
+
+
+.head-splash {margin-top: 50px; margin-bottom: 50px; letter-spacing: .0001em; }
+
+/* Extra small */
+@media only screen and (min-width : 480px) {
+
+	.head-splash {font-size: 36px; line-height: 36px;}
+
+}
+
+/* Small */
+@media only screen and (min-width : 768px) {
+
+	.head-splash {font-size: 45px; line-height: 45px;}
+
+}
+
+/* Medium */
+@media only screen and (min-width : 992px) {
+
+	.head-splash {font-size: 60px; line-height: 60px;}
+
+}
+
+/* Large */
+@media only screen and (min-width : 1200px) {
+.head-splash {font-size: 70px; line-height: 70px;}
 }

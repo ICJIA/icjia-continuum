@@ -8,7 +8,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h1 style="color: #666; font-size: 100px; letter-spacing: .0001em; line-height: 105px;margin-top: 50px; margin-bottom:50px;">Promising practices in criminal justice: Assisting individuals with substance use disorders
+          <h1 class="head-splash" style="">Promising practices in criminal justice: Assisting individuals with substance use disorders
    </h1>
         </div>
 
