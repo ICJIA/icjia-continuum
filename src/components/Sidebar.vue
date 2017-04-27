@@ -1,7 +1,7 @@
 <template lang="html">
   <div class="">
     <!-- Sidebar -->
-        <div id="sidebar-wrapper">
+        <div id="sidebar-wrapper" style="margin-top: 75px;">
             <ul class="sidebar-nav">
                 <li class="sidebar-brand">
                     <a href="#">
@@ -32,7 +32,7 @@
             </ul>
         </div>
         <!-- /#sidebar-wrapper -->
-        <nav class="navbar navbar-inverse navbar-static-top">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
 
     <div class="navbar-header">
@@ -89,7 +89,7 @@ $(window).resize(function() {
 $( "#page-content-wrapper" ).on( "click", function() {
 
       $("#wrapper").removeClass("toggled");
-  
+
 });
 
 
