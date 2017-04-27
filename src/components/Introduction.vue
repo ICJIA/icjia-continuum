@@ -5,7 +5,7 @@
      <div class="intro">
      </div>
    </div>
-    <div class="container-fluid">
+    <div class="container-fluid intro-padding">
       <div class="row">
         <div class="col-md-12">
           <h1 class="head-splash" style="">Reducing Substance Use Disorders and Related Offending: A Continuum of Evidence-Informed Practices in the Criminal Justice System
@@ -16,7 +16,7 @@
 
     </div>
 
-    <div class="container-fluid">
+    <div class="container-fluid intro-padding">
       <div class="row">
         <div class="col-md-6">
           <p>In the United States, more than 20 million individuals have substance use disorders (SUDs)—not including individuals with more mild or moderate substance use and misuse.<a href="#fn:1" id="fnref:1" title="See footnote" class="footnote">1</a>  Of those with SUDs, just over 10 percent ultimately receive treatment.<a href="#fn:2" id="fnref:2" title="See footnote" class="footnote">2</a>  On average, costs incurred in the United States from alcohol and drug use due to lost work productivity, health care expenses, motor vehicle accidents, and criminal justice costs exceeds $400 billion. Almost half of the cost is at the taxpayers’ expense.<a href="#fn:3" id="fnref:3" title="See footnote" class="footnote">3</a> </p>
@@ -67,4 +67,6 @@ a[class="footnote"] {
     position: relative; top: -0.4em; font-size: 80%;
     color: #444;
 }
+
+.intro-padding {padding-left: 25px; padding-right: 25px}
 </style>

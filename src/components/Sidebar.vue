@@ -1,8 +1,8 @@
 <template lang="html">
   <div class="">
     <!-- Sidebar -->
-        <div id="sidebar-wrapper" style="margin-top: 75px;">
-            <ul class="sidebar-nav">
+        <div id="sidebar-wrapper" >
+            <ul class="sidebar-nav" style="margin-top: 75px;">
                 <li class="sidebar-brand">
                     <a href="#">
                         Start Bootstrap
