@@ -1,5 +1,5 @@
 <template>
-  <div id="app" data-spy="scroll" data-target="#page-top">
+  <div id="wrapper">
 
     <div id="outdated"></div>
 
@@ -12,14 +12,14 @@
                      <!-- </keep-alive> -->
 
 
-<my-footer />
+
 
   </div>
 </template>
 
 <script>
 
-import Navbar from '@/components/Navbar'
+import Navbar from '@/components/Sidebar'
 import MyFooter from '@/components/Footer'
 import metaInfo from '@/meta'
 

@@ -1,6 +1,6 @@
 <template>
 
-  <div>
+  <div id="page-content-wrapper">
 
     <introduction />
 
@@ -44,6 +44,9 @@
 
 
             $(function() {
+
+
+
                 // Vertical timeline Cody House: https://codyhouse.co/gem/vertical-timeline/
                 var timelineBlocks = $('.cd-timeline-block'),
                     offset = 0.8;
