@@ -164,7 +164,7 @@
 
         <div class="row row-rule">
           <div class="col-md-12" style="padding-left: 35px; padding-right: 35px;">
-            <div style="font-size: 16px">
+            <div>
             <ol><li class="refs-offset"  id="fn:1">U.S. Department of Health and Human Services (HHS), Office of the Surgeon General. (2016). <em>Facing addiction in America: The Surgeon General’s report on alcohol, drugs, and health.</em> Washington, DC: HHS. <a href="#fnref:1" title="Return to article" class="reversefootnote">↩</a></li><li class="refs-offset"  id="fn:2">U.S. Department of Health and Human Services (HHS), Office of the Surgeon General. (2016). <em>Facing addiction in America: The Surgeon General’s report on alcohol, drugs, and health.</em> Washington, DC: HHS. <a href="#fnref:2" title="Return to article" class="reversefootnote">↩</a></li><li class="refs-offset"  id="fn:3">U.S. Department of Health and Human Services (HHS), Office of the Surgeon General. (2016). <em>Facing addiction in America: The Surgeon General’s report on alcohol, drugs, and health.</em> Washington, DC: HHS. <a href="#fnref:3" title="Return to article" class="reversefootnote">↩</a></li><li class="refs-offset"  id="fn:4">The National Center on Addiction and Substance Abuse. (2010). <em>Behind bars II: Substance abuse and America’s prison population.</em> Columbia, NY: Columbia University.; Caulkins, J. P., &amp; Kleiman, M. A. R. (2014). <em>How much crime is drug-related? History, limitations, and potential improvements of estimation methods.</em> Washington, DC: U.S. Department of Justice. <a href="#fnref:4" title="Return to article" class="reversefootnote">↩</a></li><li class="refs-offset"  id="fn:5">Centers for Disease Control and Prevention. (2016). Understanding the epidemic. Last modified June 21, 2016. Retrieved from <a href="http://bit.ly/2oqfbEf">http://bit.ly/2oqfbEf</a>. <a href="#fnref:5" title="Return to article" class="reversefootnote">↩</a></li><li class="refs-offset"  id="fn:6">The National Center on Addiction and Substance Abuse. (2010). <em>Behind bars II: Substance abuse and America’s prison population.</em> Columbia, NY: Columbia University. <a href="#fnref:6" title="Return to article" class="reversefootnote">↩</a></li><li class="refs-offset"  id="fn:7">The National Center on Addiction and Substance Abuse. (2010). <em>Behind bars II: Substance abuse and America’s prison population.</em> Columbia, NY: Columbia University. <a href="#fnref:7" title="Return to article" class="reversefootnote">↩</a></li><li class="refs-offset"  id="fn:8">Pelan, M. (2015). Re-visioning drug use: A shift away from criminal justice and abstinence-based approaches. <em>Social Work and Society International Online Journal</em>, <em>13</em>(2). <a href="#fnref:8" title="Return to article" class="reversefootnote">↩</a></li><li class="refs-offset"  id="fn:9">Harm Reduction Coalition. (n.d.). <em>Principles of harm reduction</em>. Retrieved from <a href="http://bit.ly/1I4t27D">http://bit.ly/1I4t27D</a>. <a href="#fnref:9" title="Return to article" class="reversefootnote">↩</a></li><li class="refs-offset"  id="fn:10">Reichert, J., Sacomani, R., Medina, E., DeSalvo, M., &amp; Adams, S. (2016). <em>Drug trends and distribution in Illinois: A survey of drug task forces.</em> Chicago, IL: Illinois Criminal Justice Information Authority. <a href="#fnref:10" title="Return to article" class="reversefootnote">↩</a></li><li class="refs-offset"  id="fn:11">Bahr, S. J., Masters, A. L., &amp; Taylor, B. M. (2012). What works in substance abuse treatment programs for offenders? <em>The Prison Journal, 92</em>(2), 155-174.; Police Executive Research Forum. (2016). Building successful partnerships between law enforcement and public health agencies to address opioid use. <em>COPS Office Emerging Issues Forums.</em> Washington, DC: Office of Community Oriented Policing Services. <a href="#fnref:11" title="Return to article" class="reversefootnote">↩</a></li><li class="refs-offset"  id="fn:12">Chandler, R. K., Fletcher, B. W., &amp; Volkow, N. D. (2014). Treatment drug abuse and addiction in the criminal justice system: Improving public health and safety. <em>Journal of the American Medical Association, 30</em>(12), 183-190. <a href="#fnref:12" title="Return to article" class="reversefootnote">↩</a></li><li class="refs-offset"  id="fn:13">Office of National Drug Control Policy. (2012). <em>Costs and benefits of investing early in substance abuse treatment.</em> Executive Office of the President. Washington, D.C. <a href="#fnref:13" title="Return to article" class="reversefootnote">↩</a></li><li class="refs-offset"  id="fn:14">Crimesolutions.gov. (2011). <em>Glossary.</em> National Institute of Justice, Office of Justice Programs. Washington,  <br>
 DC Retrieved from <a href="http://bit.ly/2oieUTg">http://bit.ly/2oieUTg</a>.; Blueprints Program Model. (2012-2016). <em>Program criteria.</em> Blueprints for Healthy Youth Development. Boulder, CO. Retrieved from <a href="http://bit.ly/2oFVhqG">http://bit.ly/2oFVhqG</a>.; see also Orchowsky, S. (2014). <em>An introduction to evidence-based practices.</em> Washington, DC: Justice Research and Statistics Association, Bureau of Justice Assistance, U.S. Department of Justice, and National Criminal Justice Association.  <a href="#fnref:14" title="Return to article" class="reversefootnote">↩</a></li><li class="refs-offset"  id="fn:15">U.S. Department of Health and Human Services (HHS), Office of the Surgeon General. (2016). <em>Facing addiction in America: The Surgeon General’s report on alcohol, drugs, and health.</em> Washington, DC: Author.; see also Catalano, R. F., Fagan, A. A., Gavin, L. E., Greenberg, M. T., Irwin, C. E., Ross, D. A., &amp; Shek, D. T. (2012). Worldwide application of prevention science in adolescent health. <em>The Lancet, 379</em>(9826), 1653-1664.; Stone, A. L., Becker, L. G., Huber, A. M., &amp; Catalano, R. F. (2012). Review of risk and protective factors of substance use and problem use in emerging adulthood. <em>Addictive Behaviors, 37</em>(7), 747- 775.; Shek, D. T. L., Sun, R. C. F., &amp; Merrick, J. (2012). Positive youth development constructs: Conceptual review and application. <em>The Scientific World Journal</em>.; Viner, R. M., Ozer, E. M., Denny, S., Marmot, M., Resnick, M., Fatusi, A., &amp; Currie, C. (2012). Adolescence and the social determinants of health. <em>The Lancet, 379</em>(9826), 1641-1652.  <a href="#fnref:15" title="Return to article" class="reversefootnote">↩</a></li><li class="refs-offset"  id="fn:16">U.S. Department of Health and Human Services (HHS), Office of the Surgeon General. (2016). <em>Facing addiction in America: The Surgeon General’s report on alcohol, drugs, and health.</em> Washington, DC: Author. <a href="#fnref:16" title="Return to article" class="reversefootnote">↩</a></li><li class="refs-offset"  id="fn:17">U.S. Department of Health and Human Services (HHS), Office of the Surgeon General. (2016). <em>Facing addiction in America: The Surgeon General’s report on alcohol, drugs, and health.</em> Washington, DC: Author. <a href="#fnref:17" title="Return to article" class="reversefootnote">↩</a></li></ol></div>
           </div>
@@ -201,9 +201,25 @@ export default {
 
 <style lang="css">
 a {font-weight: 700; color: #888}
+a {
+   outline: 0 !important;
+}
 a[class="footnote"] {
     position: relative; top: -0.4em; font-size: 80%;
     color: #444;
+    outline:0 !important;
+    border:none !important;
+    -moz-outline-style: none !important;
+}
+
+
+a:active,
+a:focus,
+a:visited {
+  text-decoration: none;
+  outline:0 !important;
+  border:none !important;
+  -moz-outline-style: none !important;
 }
 
 .intro-padding {padding-left: 45px; padding-right: 45px}
@@ -215,7 +231,7 @@ thead tr th {font-weight: 900}
   .topSpacer25 {margin-top: 30px}
   .refs {font-size: 15px;}
 
-  ol li {margin-bottom: 8px;}
+  ol li {margin-bottom: 8px; font-size: 15px}
 
   .refs-offset {padding-top: 60px; margin-top: -60px;}
   .footnote {padding-top: 60px; margin-top: -60px;}
