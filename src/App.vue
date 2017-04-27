@@ -37,6 +37,12 @@ export default {
     mounted: function() {
         $(function() {
 
+          let windowsize = $(window).width();
+          if (windowsize > 768) {
+            //if the window is greater than 440px wide then turn on jScrollPane..
+            $("#wrapper").addClass("toggled");
+          }
+
             //Outdated browser plugin. Anything less than IE11
             outdatedBrowser({
                 bgColor: '#f25648',
