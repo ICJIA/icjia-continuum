@@ -530,11 +530,12 @@ section#conclusion {
 
 
 .head-splash {letter-spacing: .0001em; margin-top: 20px; margin-bottom: 20px }
-
+.head-splash-sub  {border-bottom: 2px solid #eee; padding-bottom: 20px; letter-spacing: .0001em; margin-top: 20px; margin-bottom: 20px }
 /* Extra small */
 @media only screen and (min-width : 480px) {
 
 	.head-splash {font-size: 45px; line-height: 45px; margin-top: 30px; margin-bottom: 30px; }
+	.head-splash-sub {font-size: 30px; line-height: 30px;margin-top: 40px; margin-bottom: 30px; }
 
 }
 
@@ -542,6 +543,7 @@ section#conclusion {
 @media only screen and (min-width : 768px) {
 
 	.head-splash {font-size: 45px; line-height: 45px; margin-top: 30px; margin-bottom: 30px; }
+	.head-splash-sub {font-size: 30px; line-height: 30px;margin-top: 40px; margin-bottom: 30px; }
 
 }
 
@@ -549,12 +551,14 @@ section#conclusion {
 @media only screen and (min-width : 992px) {
 
 	.head-splash {font-size: 60px; line-height: 60px;margin-top: 30px; margin-bottom: 40px; }
+	.head-splash-sub {font-size: 40px; line-height: 40px;margin-top: 50px; margin-bottom: 40px; }
 
 }
 
 /* Large */
 @media only screen and (min-width : 1200px) {
 .head-splash {font-size: 70px; line-height: 70px;margin-top: 50px; margin-bottom: 50px; }
+.head-splash-sub {font-size: 45px; line-height: 45px;margin-top: 50px; margin-bottom: 50px; }
 }
 
 // Show scrollbars on modal body.

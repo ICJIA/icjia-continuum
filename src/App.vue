@@ -1,4 +1,5 @@
 <template>
+
   <div id="wrapper">
 
     <div id="outdated"></div>
@@ -14,7 +15,8 @@
 
 
 
-  </div>
+
+</div>
 </template>
 
 <script>

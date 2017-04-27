@@ -2,33 +2,25 @@
   <div class="">
     <!-- Sidebar -->
         <div id="sidebar-wrapper" >
-            <ul class="sidebar-nav" style="margin-top: 75px;">
-                <li class="sidebar-brand">
+            <ul class="sidebar-nav" style="margin-top: 10px;">
+                <!-- <li class="sidebar-brand text-center">
                     <a href="#">
-                        Start Bootstrap
+                        REDUCING SUBSTANCE USE DISORDERS AND RELATED OFFENDING
                     </a>
+                </li> -->
+                <li>
+                    <a href="javascript:void(0);" v-scroll-to="'#top'" >Introduction</a>
                 </li>
                 <li>
-                    <a href="#">Dashboard</a>
+                    <a ref="javascript:void(0);" v-scroll-to="{el: '#section-1',offset: -50}" >Prevention Programs</a>
                 </li>
                 <li>
-                    <a href="#">Shortcuts</a>
+                    <a ref="javascript:void(0);" v-scroll-to="{el: '#section-2',offset: -50}" >Law Enforcement</a>
                 </li>
                 <li>
-                    <a href="#">Overview</a>
+                    <a href="#">Conclusion</a>
                 </li>
-                <li>
-                    <a href="#">Events</a>
-                </li>
-                <li>
-                    <a href="#">About</a>
-                </li>
-                <li>
-                    <a href="#">Services</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
-                </li>
+
             </ul>
         </div>
         <!-- /#sidebar-wrapper -->
@@ -59,6 +51,16 @@
 
 <script>
 export default {
+
+  data () {
+    return {
+      isActive: true
+    }
+  },
+
+  methods: {
+
+   },
 
   mounted() {
 
@@ -91,6 +93,12 @@ $( "#page-content-wrapper" ).on( "click", function() {
       $("#wrapper").removeClass("toggled");
 
 });
+
+$('li a').click(function(e) {
+        e.preventDefault();
+        $('a').removeClass('active');
+        $(this).addClass('active');
+    });
 
 
 
@@ -194,9 +202,11 @@ $( "#page-content-wrapper" ).on( "click", function() {
 }
 
 .sidebar-nav > .sidebar-brand {
-    height: 65px;
-    font-size: 18px;
-    line-height: 60px;
+    height: 95px;
+    font-size: 16px;
+    line-height: 20px;
+    background: #fff;
+    padding-top: 20px;
 }
 
 .sidebar-nav > .sidebar-brand a {
@@ -205,7 +215,7 @@ $( "#page-content-wrapper" ).on( "click", function() {
 
 .sidebar-nav > .sidebar-brand a:hover {
     color: #fff;
-    background: none;
+    background: #ccc;
 }
 
 @media(min-width:768px) {
@@ -238,6 +248,7 @@ $( "#page-content-wrapper" ).on( "click", function() {
 }
 
 
+li a.active {color: #fff}
 
 
 

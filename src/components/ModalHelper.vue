@@ -1,6 +1,6 @@
 <template lang="html">
 <div class="modalHelper">
-  <div class="modal fade" :id="id" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <!-- <div class="modal fade" :id="id" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header" style="background: #aaa; color: #fff">
@@ -14,14 +14,36 @@
           <slot name="body"></slot>
         </div>
         <div class="modal-footer">
-          <!-- <button type="button" v-on:click="printModal()" id="btn-print" class="btn btn-primary" >Print</button> -->
+
           <a class="btn btn-primary" >Download PDF</a>
           <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
 
         </div>
       </div>
     </div>
+  </div> -->
+
+
+  <div class="modal fade" :id="id" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span style="font-weight: 900" aria-hidden="true" >X</span></button>
+        <h4 class="modal-title" id="myModalLabel"><slot name="title"></slot></h4>
+      </div>
+      <div class="modal-body">
+        <slot name="body"></slot>
+      </div>
+      <div class="modal-footer">
+          <a class="btn btn-primary" >Download PDF</a>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
   </div>
+</div>
+
+
+
 </div>
 </template>
 
@@ -42,7 +64,8 @@ export default {
 </script>
 
 <style lang="css">
-
+button.close {color: #000 !important}
+.modal-header {background: #aaa; color: #fff}
 .modal-title {font-family: 'Lato', sans-serif; font-weight: 700; text-transform: uppercase;}
 button.btn:hover {cursor: pointer; cursor: hand;}
 

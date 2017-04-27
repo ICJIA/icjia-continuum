@@ -3,6 +3,7 @@ import tether from 'tether'
 import bootstrap from 'bootstrap'
 import lodash from 'lodash';
 
+
 import './scss/style.scss';
 
 import Vue from 'vue'

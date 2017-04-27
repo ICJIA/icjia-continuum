@@ -5,7 +5,7 @@
 		<div class="section-title">
 			Prevention Programs
 		</div>
-		<div><i class="fa fa-angle-down fa-2x" style="color: #fff; margin-top: -20px;" aria-hidden="true"></i></div>
+		<!-- <div><i class="fa fa-angle-down fa-2x" style="color: #fff; margin-top: -20px;" aria-hidden="true"></i></div> -->
 	</div>
 	<div id="cd-timeline-1" class="cd-container">
 		<div class="cd-timeline-block">
@@ -29,7 +29,7 @@
 
 
 
-	
+
 
 
 	</div> <!-- cd-timeline -->
@@ -47,7 +47,7 @@
   <div class="section-title">
     Law Enforcement
   </div>
-  <div><i class="fa fa-angle-down fa-2x" style="color: #fff; margin-top: -20px;" aria-hidden="true"></i></div>
+  <!-- <div><i class="fa fa-angle-down fa-2x" style="color: #fff; margin-top: -20px;" aria-hidden="true"></i></div> -->
 </div>
 <div id="cd-timeline-1" class="cd-container">
   <div class="cd-timeline-block">
