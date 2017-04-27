@@ -530,7 +530,8 @@ section#conclusion {
 
 
 .head-splash {letter-spacing: .0001em; margin-top: 20px; margin-bottom: 20px }
-.head-splash-sub  {border-bottom: 2px solid #eee; padding-bottom: 20px; letter-spacing: .0001em; margin-top: 20px; margin-bottom: 20px }
+.head-splash-sub  {border-bottom: 2px solid #eee; padding-bottom: 20px; letter-spacing: .0001em; margin-top: 20px; margin-bottom: 20px; border-bottom: 0px solid #eee; }
+.head-splash-sub.no-rule {}
 /* Extra small */
 @media only screen and (min-width : 480px) {
 

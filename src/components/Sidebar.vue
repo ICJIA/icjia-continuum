@@ -88,11 +88,11 @@ $(window).resize(function() {
       }
 });
 
-$( "#page-content-wrapper" ).on( "click", function() {
-
-      $("#wrapper").removeClass("toggled");
-
-});
+// $( "#page-content-wrapper" ).on( "click", function() {
+//
+//       $("#wrapper").removeClass("toggled");
+//
+// });
 
 $('li a').click(function(e) {
         e.preventDefault();
