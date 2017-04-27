@@ -47,7 +47,7 @@ const router = new VueRouter({
 //  }
 //
 //  let gaTitle = '(not set)'
-//  let gaTitlePrefix = 'ICJIA GATA | '
+//  let gaTitlePrefix = 'ICJIA Continuum | '
 //
 //  router.afterEach(from  => {
 //    let pageTitle = _.filter(router.options.routes, function(o) { return o.path === from.fullPath });

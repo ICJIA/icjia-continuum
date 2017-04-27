@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" data-spy="scroll" data-target="#page-top">
 
     <div id="outdated"></div>
 

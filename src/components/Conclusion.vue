@@ -1,5 +1,5 @@
 <template lang="html">
-  <section style="margin-top: 4px;" id="section-2">
+  <section style="margin-top: 4px;" id="conclusion">
     <div class="container">
   <div class="row">
   	<div class="col-md-12 text-center">

@@ -14,6 +14,8 @@
           <slot name="body"></slot>
         </div>
         <div class="modal-footer">
+          <!-- <button type="button" v-on:click="printModal()" id="btn-print" class="btn btn-primary" >Print</button> -->
+          <a class="btn btn-primary" >Download PDF</a>
           <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
 
         </div>
@@ -26,10 +28,22 @@
 <script>
 export default {
 
-  props: ['id']
+  methods: {
+    // printModal: function (event) {
+    //   console.log(this.$el.querySelector('.modal-body'))
+    //
+    // }
+  },
+
+  props: ['id'],
+
 
 }
 </script>
 
 <style lang="css">
+
+.modal-title {font-family: 'Lato', sans-serif; font-weight: 700; text-transform: uppercase;}
+button.btn:hover {cursor: pointer; cursor: hand;}
+
 </style>

@@ -11,9 +11,6 @@ const modal2 =
 
 <p>Morbi eu turpis dolor. Nam congue suscipit ex, et egestas nisi fringilla ut. Suspendisse sed velit id lacus lacinia hendrerit. Nam feugiat velit ut sapien commodo accumsan. Mauris luctus eros lectus, a varius risus mattis vel. Ut erat nisl, gravida vitae mauris vitae, vulputate volutpat nunc. Donec sollicitudin metus eu augue gravida egestas. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis ipsum erat, bibendum nec efficitur ut, pellentesque ut magna. Aenean non iaculis diam. Quisque cursus vestibulum mauris ac sagittis. Praesent id purus nec quam consequat vulputate eget sed massa. Donec malesuada elit metus, vulputate accumsan quam porta ut. In eget blandit justo.</p>
 
-
-
-
 `
 
 export {modal2}

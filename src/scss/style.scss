@@ -446,9 +446,9 @@ header {
 	}
 }
 
-section#section-2 {
+section#conclusion {
 		background: $conclusion;
-		padding: 50px 30px 50px 30px;
+		padding: 10px 30px 50px 30px;
 		color: $font-light;
 }
 
@@ -529,30 +529,42 @@ section#section-2 {
 
 
 
-.head-splash {margin-top: 50px; margin-bottom: 50px; letter-spacing: .0001em; }
+.head-splash {letter-spacing: .0001em; margin-top: 20px; margin-bottom: 20px }
 
 /* Extra small */
 @media only screen and (min-width : 480px) {
 
-	.head-splash {font-size: 36px; line-height: 36px;}
+	.head-splash {font-size: 45px; line-height: 45px; margin-top: 30px; margin-bottom: 30px; }
 
 }
 
 /* Small */
 @media only screen and (min-width : 768px) {
 
-	.head-splash {font-size: 45px; line-height: 45px;}
+	.head-splash {font-size: 45px; line-height: 45px; margin-top: 30px; margin-bottom: 30px; }
 
 }
 
 /* Medium */
 @media only screen and (min-width : 992px) {
 
-	.head-splash {font-size: 60px; line-height: 60px;}
+	.head-splash {font-size: 60px; line-height: 60px;margin-top: 30px; margin-bottom: 40px; }
 
 }
 
 /* Large */
 @media only screen and (min-width : 1200px) {
-.head-splash {font-size: 70px; line-height: 70px;}
+.head-splash {font-size: 70px; line-height: 70px;margin-top: 50px; margin-bottom: 50px; }
+}
+
+// Show scrollbars on modal body.
+.modal-body {
+    max-height: calc(100vh - 212px) !important;
+    overflow-y: auto !important;
+}
+
+
+.modal-dialog
+{
+    width: 80% !important; /* your width */
 }

@@ -25,7 +25,7 @@
 
 
     const description = `There are currently an estimated 2.3 million individuals in U.S. prisons and jails, with 1.5 million meeting DSM-IV medical criteria for addiction. Further, approximately 70 percent of state and 64 percent of federal inmates reported regular drug use prior to imprisonment; about 25 percent of violent offenders in state prisons committed their offenses under the influence of drugs`
-    const title = titleCase("PROMISING PRACTICES IN CRIMINAL JUSTICE")
+    const title = titleCase("HOME")
     const created = moment('2017-03-25')
     const type = 'page'
     const status = 'live'
@@ -40,6 +40,8 @@
             status
         },
         mounted() {
+
+
 
             $(function() {
                 // Vertical timeline Cody House: https://codyhouse.co/gem/vertical-timeline/
@@ -101,33 +103,20 @@
         },
         methods: {
 
-        }
+        },
     }
 
 </script>
 
 <style>
 
-  .sweet-modal-overlay {
-      background: rgba(100, 100, 100, 0.9) !important;
-  }
-  .sweet-modal ul.sweet-modal-tabs li.sweet-modal-tab {
-      font-weight: 700 !important;
-      font-size: 16px !important;
-      text-transform: uppercase !important;
-      font-family: 'Lato', sans-serif !important;
-  }
-  .sweet-modal ul.sweet-modal-tabs li.sweet-modal-tab.active {
-      background: #eee !important;
-  }
+
   .btn {
       color: #fff !important
   }
   a:hover {
       cursor: pointer;
   }
-  .modal-dialog {
-      max-width: 1024px;
-  }
+
 
 </style>
