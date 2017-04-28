@@ -43,7 +43,7 @@ export default {
             $("#wrapper").addClass("toggled");
           }
 
-            //Outdated browser plugin. Anything less than IE11
+            //Outdated browser plugin. Thumbs down on anything less than IE11.
             outdatedBrowser({
                 bgColor: '#f25648',
                 color: '#ffffff',
