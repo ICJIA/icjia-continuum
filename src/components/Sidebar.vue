@@ -18,7 +18,7 @@
                     <a href="#section-2" v-scroll-to="{el: '#section-2',offset: -50}" >Law Enforcement</a>
                 </li>
                 <li>
-                    <a href="#conclusion">Conclusion</a>
+                    <a href="#conclusion" v-scroll-to="{el: '#conclusion',offset: -50}">Conclusion</a>
                 </li>
 
             </ul>
@@ -64,22 +64,6 @@ export default {
 
   mounted() {
 
-    var delay = (function(){
-      var timer = 0;
-      return function(callback, ms){
-      clearTimeout (timer);
-      timer = setTimeout(callback, ms);
-    };
-  })();
-
-
-//   $(window).resize(function() {
-//     delay(function(){
-//       if ($('#wrapper').hasClass("toggled")) {
-//           $("#wrapper").removeClass("toggled");
-//       }
-//     }, 0);
-// });
 
 
 $(window).resize(function() {
@@ -88,16 +72,11 @@ $(window).resize(function() {
       }
 });
 
-// $( "#page-content-wrapper" ).on( "click", function() {
-//
-//       $("#wrapper").removeClass("toggled");
-//
-// });
 
-$('li a').click(function(e) {
+$('ul#sidebar-nav li a').click(function(e) {
         e.preventDefault();
-        $('a').removeClass('active');
-        $(this).addClass('active');
+        //$('a').removeClass('active');
+        //$(this).addClass('active');
     });
 
 
@@ -249,6 +228,14 @@ $('li a').click(function(e) {
 
 
 li a.active {color: #fff}
+
+.navbar-brand:hover { cursor: pointer; cursor: hand; }
+
+.navbar-inverse .navbar-brand:focus, .navbar-inverse .navbar-brand {
+    color: #fff !important;
+    background-color: transparent;
+    font-weight: 900;
+}
 
 
 

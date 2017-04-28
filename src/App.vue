@@ -20,7 +20,6 @@
 </template>
 
 <script>
-
 import Navbar from '@/components/Sidebar'
 import MyFooter from '@/components/Footer'
 import metaInfo from '@/meta'
@@ -36,37 +35,34 @@ export default {
 
     mounted: function() {
 
-      var sections = $('section')
-, nav = $('nav#sidebar-wrapper')
-, nav_height = 50
-console.log(nav_height)
-$(window).on('scroll', function () {
-var cur_pos = $(this).scrollTop();
+        // custom scrollspy for adding 'active' class to sidenav
 
-sections.each(function() {
-  var top = $(this).offset().top - nav_height,
-      bottom = top + $(this).outerHeight();
+        let sections = $('section')
+        let nav = $('nav#sidebar-wrapper')
 
-
-  if (cur_pos >= top && cur_pos <= bottom) {
-      console.log('Section ID: ',$(this).attr('id'))
-      //console.log(cur_pos, top, bottom)
-      nav.find('a').removeClass('active');
-    // sections.removeClass('active');
-    //
-    // $(this).addClass('active');
-    nav.find('a[href="#'+$(this).attr('id')+'"]').addClass('active');
-  }
-});
-});
+        // Height of fixed width top nav
+        let nav_height = 50
+        
+        $(window).on('scroll', function() {
+            let cur_pos = $(this).scrollTop();
+            sections.each(function() {
+                let top = $(this).offset().top - nav_height,
+                    bottom = top + $(this).outerHeight();
+                if (cur_pos >= top && cur_pos <= bottom) {
+                    //console.log('Section ID: ', $(this).attr('id'))
+                    nav.find('a').removeClass('active');
+                    nav.find('a[href="#' + $(this).attr('id') + '"]').addClass('active');
+                }
+            });
+        });
 
         $(function() {
 
-          let windowsize = $(window).width();
-          if (windowsize > 768) {
-            //if the window is greater than 440px wide then turn on jScrollPane..
-            $("#wrapper").addClass("toggled");
-          }
+            // toggle sidenav on startup if browser > 768px
+            let windowsize = $(window).width();
+            if (windowsize > 768) {
+                $("#wrapper").addClass("toggled");
+            }
 
             //Outdated browser plugin. Thumbs down on anything less than IE11.
             outdatedBrowser({

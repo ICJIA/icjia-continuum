@@ -1,5 +1,5 @@
 <template lang="html">
-  <section id="section-0" style="padding-bottom: 60px">
+  <section id="section-0" style="padding-bottom: 60px;">
 
     <div class="hero" style="margin-top: 50px !important">
      <div class="intro">
