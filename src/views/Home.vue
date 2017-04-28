@@ -41,6 +41,8 @@
         },
         mounted() {
 
+          
+
 
 
             $(function() {

@@ -1,30 +1,30 @@
 <template lang="html">
   <div class="">
     <!-- Sidebar -->
-        <div id="sidebar-wrapper" >
-            <ul class="sidebar-nav" style="margin-top: 10px;">
+        <nav id="sidebar-wrapper">
+            <ul class="sidebar-nav" >
                 <!-- <li class="sidebar-brand text-center">
                     <a href="#">
                         REDUCING SUBSTANCE USE DISORDERS AND RELATED OFFENDING
                     </a>
                 </li> -->
                 <li>
-                    <a href="javascript:void(0);" v-scroll-to="'#top'" >Introduction</a>
+                    <a href="#section-0" v-scroll-to="'#section-0'">Introduction</a>
                 </li>
                 <li>
-                    <a ref="javascript:void(0);" v-scroll-to="{el: '#section-1',offset: -50}" >Prevention Programs</a>
+                    <a href="#section-1" v-scroll-to="{el: '#section-1',offset: -50}" >Prevention Programs</a>
                 </li>
                 <li>
-                    <a ref="javascript:void(0);" v-scroll-to="{el: '#section-2',offset: -50}" >Law Enforcement</a>
+                    <a href="#section-2" v-scroll-to="{el: '#section-2',offset: -50}" >Law Enforcement</a>
                 </li>
                 <li>
-                    <a href="#">Conclusion</a>
+                    <a href="#conclusion">Conclusion</a>
                 </li>
 
             </ul>
-        </div>
+        </nav>
         <!-- /#sidebar-wrapper -->
-        <nav class="navbar navbar-inverse navbar-fixed-top">
+        <nav class="navbar navbar-inverse navbar-fixed-top" >
   <div class="container-fluid">
 
     <div class="navbar-header">
