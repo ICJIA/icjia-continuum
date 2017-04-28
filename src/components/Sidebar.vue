@@ -9,7 +9,22 @@
                     </a>
                 </li> -->
                 <li>
-                    <a href="#section-0" v-scroll-to="'#section-0'">Introduction</a>
+                    <a href="#section-0" v-scroll-to="'#section-0'" class="active">Introduction</a>
+                    <ul class="subnav">
+                      <li style="font-size: 12px">
+                        <a href="#defining-evidence-based-practices" v-scroll-to="{el: '#defining-evidence-based-practices',offset: -70}" >Defining EB Practices
+                        </a>
+                      </li>
+                      <li style="font-size: 12px">
+                        <a href="#evidence-based-risk-and-protective-factors" v-scroll-to="{el: '#evidence-based-risk-and-protective-factors',offset: -70}" >
+                          EB Risk and Protective Factors
+                        </a>
+                        </li>
+                      <li style="font-size: 12px">
+                        <a href="#references" v-scroll-to="{el: '#references',offset: -30}" >
+                          References
+                        </a></li>
+                    </ul>
                 </li>
                 <li>
                     <a href="#section-1" v-scroll-to="{el: '#section-1',offset: -50}" >Prevention Programs</a>
@@ -156,6 +171,7 @@ $('ul#sidebar-nav li a').click(function(e) {
     margin: 0;
     padding: 0;
     list-style: none;
+    margin-top: 15px;
 }
 
 .sidebar-nav li {
@@ -172,7 +188,7 @@ $('ul#sidebar-nav li a').click(function(e) {
 .sidebar-nav li a:hover {
     text-decoration: none;
     color: #fff;
-    background: rgba(255,255,255,0.2);
+    background: #bbb
 }
 
 .sidebar-nav li a:active,
@@ -227,7 +243,7 @@ $('ul#sidebar-nav li a').click(function(e) {
 }
 
 
-li a.active {color: #fff}
+li a.active {color: #fff; background: #999}
 
 .navbar-brand:hover { cursor: pointer; cursor: hand; }
 
@@ -237,6 +253,7 @@ li a.active {color: #fff}
     font-weight: 900;
 }
 
+ul.subnav {list-style: none; margin-left: 15px; margin-bottom: 10px;}
 
 
 </style>

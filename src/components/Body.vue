@@ -98,7 +98,7 @@ Read More
 
 
 <div v-for="item in modalMap">
-  <modal-helper :id="item.id">
+  <modal-helper :id="item.id" :pdf="item.pdf">
 
     <div slot="title">
       {{item.title}}
@@ -116,10 +116,7 @@ Read More
 </template>
 
 <script>
-import {
-    modalMap
-} from '@/modals'
-
+import { modalMap } from '@/modals'
 import ModalHelper from '@/components/ModalHelper'
 
 export default {

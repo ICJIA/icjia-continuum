@@ -41,8 +41,8 @@ export default {
         let nav = $('nav#sidebar-wrapper')
 
         // Height of fixed width top nav
-        let nav_height = 50
-        
+        let nav_height = 55
+
         $(window).on('scroll', function() {
             let cur_pos = $(this).scrollTop();
             sections.each(function() {

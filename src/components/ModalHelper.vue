@@ -35,7 +35,7 @@
         <slot name="body"></slot>
       </div>
       <div class="modal-footer">
-          <a class="btn btn-primary" >Download PDF</a>
+          <a class="btn btn-primary" :href="pdf" :download="parseFilename(pdf)">Download PDF</a>
         <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
       </div>
     </div>
@@ -55,9 +55,14 @@ export default {
     //   console.log(this.$el.querySelector('.modal-body'))
     //
     // }
+
+    // strip path -- leave filename
+    parseFilename (pdf) {
+      return pdf.split('\\').pop().split('/').pop();
+    }
   },
 
-  props: ['id'],
+  props: ['id','pdf'],
 
 
 }
