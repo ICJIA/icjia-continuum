@@ -35,7 +35,7 @@
         <slot name="body"></slot>
       </div>
       <div class="modal-footer">
-          <a class="btn btn-primary" :href="pdf" :download="parseFilename(pdf)">Download PDF</a>
+          <a class="btn btn-primary" :href="pdf" :download="parseFilename(pdf)"><i class="fa fa-file-pdf-o" aria-hidden="true">&nbsp;&nbsp;</i>Download PDF</a>
         <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
       </div>
     </div>
@@ -56,8 +56,9 @@ export default {
     //
     // }
 
-    // strip path -- leave filename
+
     parseFilename (pdf) {
+      // strip path -- leave filename for PDF download
       return pdf.split('\\').pop().split('/').pop();
     }
   },

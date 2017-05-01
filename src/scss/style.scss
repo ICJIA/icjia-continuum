@@ -533,10 +533,13 @@ section#conclusion {
 .head-splash-sub  {border-bottom: 2px solid #eee; padding-bottom: 20px; letter-spacing: .0001em; margin-top: 20px; margin-bottom: 20px; border-bottom: 0px solid #eee; }
 .head-splash-sub.no-rule {}
 /* Extra small */
-@media only screen and (min-width : 480px) {
+@media only screen and (max-width : 480px) {
 
 	.head-splash {font-size: 45px; line-height: 45px; margin-top: 30px; margin-bottom: 30px; }
 	.head-splash-sub {font-size: 30px; line-height: 30px;margin-top: 40px; margin-bottom: 30px; }
+	ul.sidebar-nav {margin-top: 65px !important}
+	#full-title {display: none}
+	.navbar-brand {font-size: 14px;}
 
 }
 
@@ -546,6 +549,10 @@ section#conclusion {
 	.head-splash {font-size: 45px; line-height: 45px; margin-top: 30px; margin-bottom: 30px; }
 	.head-splash-sub {font-size: 30px; line-height: 30px;margin-top: 40px; margin-bottom: 30px; }
 
+
+
+
+
 }
 
 /* Medium */
@@ -553,6 +560,7 @@ section#conclusion {
 
 	.head-splash {font-size: 60px; line-height: 60px;margin-top: 30px; margin-bottom: 40px; }
 	.head-splash-sub {font-size: 40px; line-height: 40px;margin-top: 50px; margin-bottom: 40px; }
+
 
 }
 

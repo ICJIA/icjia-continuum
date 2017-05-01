@@ -2,12 +2,9 @@
   <div class="">
     <!-- Sidebar -->
         <nav id="sidebar-wrapper">
-            <ul class="sidebar-nav" >
-                <!-- <li class="sidebar-brand text-center">
-                    <a href="#">
-                        REDUCING SUBSTANCE USE DISORDERS AND RELATED OFFENDING
-                    </a>
-                </li> -->
+            <ul class="sidebar-nav">
+
+
                 <li>
                     <a href="#section-0" v-scroll-to="'#section-0'" class="active">Introduction</a>
                     <ul class="subnav">
@@ -46,7 +43,8 @@
 
       <div class="navbar-brand" id="menu-toggle">
         <span ><i class="fa fa-1x fa-bars " style="color: #fff"></i></span>
-        &nbsp;&nbsp;<span class="text-center">REDUCING SUBSTANCE USE DISORDERS AND RELATED OFFENDING</span>
+        &nbsp;&nbsp;<span class="text-center">REDUCING SUBSTANCE USE DISORDERS<span id=
+          "full-title"> AND RELATED OFFENDING</span></span>
         </div>
 
     </div>

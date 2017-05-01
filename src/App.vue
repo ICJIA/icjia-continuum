@@ -41,6 +41,10 @@ export default {
 
         $(function() {
 
+
+          
+
+
           // custom scrollspy for adding 'active' class to sidenav
 
           let sections = $('section')
