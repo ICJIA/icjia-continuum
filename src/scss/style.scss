@@ -543,11 +543,21 @@ section#conclusion {
 
 }
 
+@media only screen and (min-width : 480px) {
+
+	.head-splash {font-size: 45px; line-height: 45px; margin-top: 30px; margin-bottom: 30px; }
+	.head-splash-sub {font-size: 30px; line-height: 30px;margin-top: 40px; margin-bottom: 30px; }
+	ul.sidebar-nav {margin-top: 65px !important}
+
+
+}
+
 /* Small */
 @media only screen and (min-width : 768px) {
 
 	.head-splash {font-size: 45px; line-height: 45px; margin-top: 30px; margin-bottom: 30px; }
 	.head-splash-sub {font-size: 30px; line-height: 30px;margin-top: 40px; margin-bottom: 30px; }
+	ul.sidebar-nav {margin-top: 15px !important}
 
 
 
@@ -560,6 +570,7 @@ section#conclusion {
 
 	.head-splash {font-size: 60px; line-height: 60px;margin-top: 30px; margin-bottom: 40px; }
 	.head-splash-sub {font-size: 40px; line-height: 40px;margin-top: 50px; margin-bottom: 40px; }
+	ul.sidebar-nav {margin-top: 15px !important}
 
 
 }
@@ -568,7 +579,9 @@ section#conclusion {
 @media only screen and (min-width : 1200px) {
 .head-splash {font-size: 70px; line-height: 70px;margin-top: 50px; margin-bottom: 50px; }
 .head-splash-sub {font-size: 45px; line-height: 45px;margin-top: 50px; margin-bottom: 50px; }
+ul.sidebar-nav {margin-top: 15px !important}
 }
+
 
 // Show scrollbars on modal body.
 .modal-body {
