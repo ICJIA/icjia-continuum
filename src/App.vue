@@ -15,7 +15,7 @@
 
 
 
-
+<my-footer />
 </div>
 </template>
 
@@ -42,7 +42,7 @@ export default {
         $(function() {
 
 
-          
+
 
 
           // custom scrollspy for adding 'active' class to sidenav
