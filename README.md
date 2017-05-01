@@ -25,9 +25,15 @@ npm run build --report
 
 ```
 
+## Main dependencies
+- [Boostrap 3.3.7](https://v4-alpha.getbootstrap.com/getting-started/introduction/)
+- [jQuery 2.2.4](https://jquery.com/)
+- [Vue 2.2.6](https://vuejs.org/)
+- [Vue-Router 2.3.1](https://github.com/vuejs/vue-router)
+- [Webpack 2.3.3](https://webpack.js.org/)
+- [Vue Webpack template](https://github.com/vuejs-templates/webpack)
+- [prerender-spa-plugin](https://github.com/chrisvfritz/prerender-spa-plugin)
+- [webpack-bundle-analyzer](https://github.com/th0r/webpack-bundle-analyzer)
 
-## Additional Information
-
-For information on Vue, see: https://vuejs.org/
-
-For information on Webpack, see: https://webpack.js.org/
+## Live Site
+- [https://sudcontinuum.icjia.cloud/](https://sudcontinuum.icjia.cloud/)

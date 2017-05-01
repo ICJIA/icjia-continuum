@@ -35,28 +35,34 @@ export default {
 
     mounted: function() {
 
-        // custom scrollspy for adding 'active' class to sidenav
 
-        let sections = $('section')
-        let nav = $('nav#sidebar-wrapper')
 
-        // Height of fixed width top nav
-        let nav_height = 55
 
-        $(window).on('scroll', function() {
-            let cur_pos = $(this).scrollTop();
-            sections.each(function() {
-                let top = $(this).offset().top - nav_height,
-                    bottom = top + $(this).outerHeight();
-                if (cur_pos >= top && cur_pos <= bottom) {
-                    //console.log('Section ID: ', $(this).attr('id'))
-                    nav.find('a').removeClass('active');
-                    nav.find('a[href="#' + $(this).attr('id') + '"]').addClass('active');
-                }
-            });
-        });
 
         $(function() {
+
+          // custom scrollspy for adding 'active' class to sidenav
+
+          let sections = $('section')
+          let nav = $('nav#sidebar-wrapper')
+
+          // Height of fixed width top nav
+          let nav_height = 55
+
+          $(window).on('scroll', function() {
+              let cur_pos = $(this).scrollTop();
+              sections.each(function() {
+                  let top = $(this).offset().top - nav_height,
+                      bottom = top + $(this).outerHeight();
+                  if (cur_pos >= top && cur_pos <= bottom) {
+                      //console.log('Section ID: ', $(this).attr('id'))
+                      nav.find('a').removeClass('active');
+                      nav.find('a[href="#' + $(this).attr('id') + '"]').addClass('active');
+                  }
+              });
+          });
+
+
 
             // toggle sidenav on startup if browser > 768px
             let windowsize = $(window).width();
