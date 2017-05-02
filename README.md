@@ -27,7 +27,7 @@ npm run build --report
 
 ## Main dependencies
 - [Boostrap 3.3.7](https://v4-alpha.getbootstrap.com/getting-started/introduction/)
-- [jQuery 2.2.4](https://jquery.com/)
+- [jQuery 3.1.1](https://jquery.com/)
 - [Vue 2.2.6](https://vuejs.org/)
 - [Vue-Router 2.3.1](https://github.com/vuejs/vue-router)
 - [Webpack 2.3.3](https://webpack.js.org/)

@@ -54,7 +54,7 @@
       </div>
 
       <div class="row">
-        <table class="table table-striped">
+        <table class="table table-striped table-responsive">
 <thead>
 <tr>
   <th align="left" width="10%">Overall Effect</th>

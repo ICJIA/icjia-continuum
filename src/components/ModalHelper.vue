@@ -40,7 +40,7 @@ export default {
 
     $(function() {
 
-      $('.pop-modal1').click(function (e) {
+      $('.pop-modal1, .pop-modal2, .pop-modal3').click(function (e) {
         // Prevent footnote click in modal
         e.preventDefault();
       })
@@ -48,7 +48,7 @@ export default {
       // Display reference in Bootstrap popover
       $('.pop-modal1, .pop-modal2, .pop-modal3').popover({
         trigger: 'hover',
-        placement: 'auto right',
+        placement: 'auto top',
         html: true,
         title: '<strong>REFERENCE</strong>',
         content: function getFootnote() {
