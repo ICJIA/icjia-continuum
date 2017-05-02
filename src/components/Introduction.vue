@@ -226,7 +226,7 @@ export default {
     // Note: Give body page and modal page different classnames for popovers
     $('.pop-intro').popover({
       trigger: 'hover',
-      placement: 'auto right',
+      placement: 'auto top',
       html: true,
       viewport: '#section-0',
       title: '<strong>REFERENCE</strong>',
