@@ -49,7 +49,6 @@ export default {
       $('.pop').popover({
         trigger: 'hover',
         placement: 'auto right',
-        viewport: '.modal',
         html: true,
         title: '<strong>REFERENCE</strong>',
         content: function getFootnote() {
