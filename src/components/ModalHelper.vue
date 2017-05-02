@@ -40,13 +40,13 @@ export default {
 
     $(function() {
 
-      $('.pop').click(function (e) {
+      $('.pop-modal1').click(function (e) {
         // Prevent footnote click in modal
         e.preventDefault();
       })
 
       // Display reference in Bootstrap popover
-      $('.pop').popover({
+      $('.pop-modal1, .pop-modal2, .pop-modal3').popover({
         trigger: 'hover',
         placement: 'auto right',
         html: true,
@@ -82,7 +82,11 @@ button.close {color: #000 !important}
 .modal-header {background: #aaa; color: #fff}
 .modal-title {font-family: 'Lato', sans-serif; font-weight: 700; text-transform: uppercase;}
 button.btn:hover {cursor: pointer; cursor: hand;}
-.pop {position: relative; top: -0.5em; font-size: 80%;}
+.pop-modal1,
+.pop-modal2,
+.pop-modal3,
+.pop-modal4,
+.pop-modal5 {position: relative; top: -0.5em; font-size: 80%;}
 
 
 </style>
