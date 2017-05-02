@@ -42,10 +42,11 @@ export default {
         $(function() {
 
 
-          // Sidebar close helper.
+          // Sidebar close helper. This is hacky -- not sure how else to target everything but buttons
           $('#wrapper').click(function(e) {
             var nn = e.target.nodeName
-            if (nn === 'NAV' || nn === 'DIV' || nn === 'SECTION') {
+            console.log('node: ',nn)
+            if (nn === 'NAV' || nn === 'DIV' || nn === 'SECTION' || nn === 'P' || nn === 'LI') {
               $("#wrapper").removeClass("toggled");
             }
           })
