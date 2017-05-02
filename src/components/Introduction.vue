@@ -20,16 +20,16 @@
     <div class="container-fluid intro-padding">
       <div class="row">
         <div class="col-md-12">
-          <p><span class="drop">I</span>n  the United States, more than 20 million individuals have substance use disorders (SUDs)—not including individuals with more mild or moderate substance use and misuse.<a href="#fn1" id="fnref1" class="pop">1</a>  Of those with SUDs, just over 10 percent ultimately receive treatment.<a href="#fn2" id="fnref2" class="pop">2</a>  On average, costs incurred in the United States from alcohol and drug use due to lost work productivity, health care expenses, motor vehicle accidents, and criminal justice costs exceeds $400 billion. Almost half of the cost is at the taxpayers’ expense.
-            <a href="#fn3" id="fnref3" class="pop">3</a> </p>
+          <p><span class="drop">I</span>n  the United States, more than 20 million individuals have substance use disorders (SUDs)—not including individuals with more mild or moderate substance use and misuse.<a href="#fn1" id="fnref1" class="pop-intro">1</a>  Of those with SUDs, just over 10 percent ultimately receive treatment.<a href="#fn2" id="fnref2" class="pop-intro">2</a>  On average, costs incurred in the United States from alcohol and drug use due to lost work productivity, health care expenses, motor vehicle accidents, and criminal justice costs exceeds $400 billion. Almost half of the cost is at the taxpayers’ expense.
+            <a href="#fn3" id="fnref3" class="pop-intro">3</a> </p>
 
-<p>Of the 20 million individuals with SUDs, a subset is involved with the criminal justice system. More than half of the 2.2 million individuals housed in U.S. prisons and jails meet the clinical diagnosis criteria for SUDs.<a href="#fn4" class="pop" id="fnref4" >4</a>  Seventy-eight percent of violent crimes and 77 percent of property crimes involve drugs and/or alcohol.<a href="#fn5" id="fnref5" class="pop">5</a>  The government spends an estimated $74 billion dollars on court processing, community supervision, and imprisonment of individuals with SUDs, but just 1 percent of that amount on prevention and treatment for these individuals.<a href="#fn6" class="pop" id="fnref6" >6</a>  In addition, about 11 percent of prisoners with SUDs or substance misuse receive treatment.<a href="#fn7" id="fnref7" class="pop">7</a>
+<p>Of the 20 million individuals with SUDs, a subset is involved with the criminal justice system. More than half of the 2.2 million individuals housed in U.S. prisons and jails meet the clinical diagnosis criteria for SUDs.<a href="#fn4" class="pop-intro" id="fnref4" >4</a>  Seventy-eight percent of violent crimes and 77 percent of property crimes involve drugs and/or alcohol.<a href="#fn5" id="fnref5" class="pop-intro">5</a>  The government spends an estimated $74 billion dollars on court processing, community supervision, and imprisonment of individuals with SUDs, but just 1 percent of that amount on prevention and treatment for these individuals.<a href="#fn6" class="pop-intro" id="fnref6" >6</a>  In addition, about 11 percent of prisoners with SUDs or substance misuse receive treatment.<a href="#fn7" id="fnref7" class="pop-intro">7</a>
 
-</p><p>Today, SUDs and substance misuse and abuse are considered a <a href="https://addiction.surgeongeneral.gov/surgeon-generals-report.pdf">public health issue</a>, as well as a criminal justice concern. Public health, treatment providers, medical, and criminal justice professionals, as well as community members, legislators, and other stakeholders, are encouraged to collaborate to develop a comprehensive approach to SUDs.<a href="#fn8" id="fnref8" class="pop">8</a>  Together, they can increase access to substance use, misuse, and SUD treatment and the use of harm reduction tactics to reduce substance use, overdose, and criminal justice involvement.<a href="#fn9" id="fnref9" class="pop">9</a> </p>
+</p><p>Today, SUDs and substance misuse and abuse are considered a <a href="https://addiction.surgeongeneral.gov/surgeon-generals-report.pdf">public health issue</a>, as well as a criminal justice concern. Public health, treatment providers, medical, and criminal justice professionals, as well as community members, legislators, and other stakeholders, are encouraged to collaborate to develop a comprehensive approach to SUDs.<a href="#fn8" id="fnref8" class="pop-intro">8</a>  Together, they can increase access to substance use, misuse, and SUD treatment and the use of harm reduction tactics to reduce substance use, overdose, and criminal justice involvement.<a href="#fn9" id="fnref9" class="pop-intro">9</a> </p>
 
-<p>A multipronged approach to addressing drug availability and use in Illinois communities entail interdiction efforts aimed at those who traffic large quantities of illicit substances, as well as prevention, deflection, diversion, and treatment of those who use. Traditional law enforcement tactics work to combat traffickers and suppliers to reduce influx of drugs in the community.<a href="#fn10" id="fnref10" class="pop">10</a>  At the same time, the system can offer diversion, outreach, and referrals to treatment services. </p>
+<p>A multipronged approach to addressing drug availability and use in Illinois communities entail interdiction efforts aimed at those who traffic large quantities of illicit substances, as well as prevention, deflection, diversion, and treatment of those who use. Traditional law enforcement tactics work to combat traffickers and suppliers to reduce influx of drugs in the community.<a href="#fn10" id="fnref10" class="pop-intro">10</a>  At the same time, the system can offer diversion, outreach, and referrals to treatment services. </p>
 
-<p>Several substance use treatment models are effective, some more so than others.<a href="#fn11"  id="fnref11" class="pop">11</a>  Over the past several decades, research and rigorous evaluation has provided insight on effective practices for individuals with SUDs and other substance use issues and the importance of treatment over criminal justice system involvement.<a href="#fn12" id="fnref12" class="pop">12</a>  By integrating <a href="http://www.jrsa.org/projects/ebp_briefing_paper_april2014.pdf">evidence-informed practices</a>, criminal justice agencies and communities can save lives, decrease costs to the criminal justice system, healthcare systems, and taxpayers.<a href="#fn13" id="fnref13" class="pop">13</a> </p>
+<p>Several substance use treatment models are effective, some more so than others.<a href="#fn11"  id="fnref11" class="pop-intro">11</a>  Over the past several decades, research and rigorous evaluation has provided insight on effective practices for individuals with SUDs and other substance use issues and the importance of treatment over criminal justice system involvement.<a href="#fn12" id="fnref12" class="pop-intro">12</a>  By integrating <a href="http://www.jrsa.org/projects/ebp_briefing_paper_april2014.pdf">evidence-informed practices</a>, criminal justice agencies and communities can save lives, decrease costs to the criminal justice system, healthcare systems, and taxpayers.<a href="#fn13" id="fnref13" class="pop-intro">13</a> </p>
 
 <p>ICJIA researchers developed this continuum to share evidence-informed practices for addressing SUDs and substance misuse to guide local-level assessment, planning, and implementation efforts around SUD prevention and intervention. These practices range from early prevention to services to support successful reintegration back into the community following time spent in jail or prison. Communities are encouraged to use this continuum to examine the gaps and needs that exist in their areas and explore the options available to address those gaps. </p>
 
@@ -43,12 +43,12 @@
 
 
     <div class="container-fluid intro-padding">
-      
+
 
       <div class="row row-rule">
 
           <div class="col-md-12">
-            <h2 id="defining-evidence-based-practices" class="head-splash-sub"><strong>Defining Evidence-Based Practices</strong><a href="#fn14" id="fnref14" class="pop">14</a></h2>
+            <h2 id="defining-evidence-based-practices" class="head-splash-sub"><strong>Defining Evidence-Based Practices</strong><a href="#fn14" id="fnref14" class="pop-intro">14</a></h2>
           </div>
 
       </div>
@@ -84,13 +84,13 @@
       <div class="row row-rule">
         <h2 id="evidence-based-risk-and-protective-factors" class="head-splash-sub"><strong>Evidence-Based Risk and Protective Factors</strong></h2>
 
-        <p>Prevention of substance use requires an understanding of factors that may decrease the potential for substance use (protective factors) and factors that may put individuals at risk, or increase potential for substance use (risk factors). Evidence-informed prevention programs can target risk factors and enhance protective factors.<a href="#fn15" id="fnref15" class="pop">15</a>  There are five, evidence-based ecological domains that have been shown to be the most predictive of delinquency, including substance use: individual, family, peer, school, and community. </p>
+        <p>Prevention of substance use requires an understanding of factors that may decrease the potential for substance use (protective factors) and factors that may put individuals at risk, or increase potential for substance use (risk factors). Evidence-informed prevention programs can target risk factors and enhance protective factors.<a href="#fn15" id="fnref15" class="pop-intro">15</a>  There are five, evidence-based ecological domains that have been shown to be the most predictive of delinquency, including substance use: individual, family, peer, school, and community. </p>
 
       </div>
 
       <div class="row">
         <div class="col-md-6">
-          <h2 id="risk-factors-include16 " class="topSpacer25">Risk factors include:<a href="#fn16"  id="fnref16" class="pop">16</a></h2>
+          <h2 id="risk-factors-include16 " class="topSpacer25">Risk factors include:<a href="#fn16"  id="fnref16" class="pop-intro">16</a></h2>
 
 <p><strong>Individual/Peer</strong></p>
 
@@ -137,7 +137,7 @@
 
 
         <div class="col-md-6">
-          <h2 id="protective-factors-include17" class="topSpacer25">Protective factors include:<a href="#fn17" id="fnref17" class="pop">17</a></h2>
+          <h2 id="protective-factors-include17" class="topSpacer25">Protective factors include:<a href="#fn17" id="fnref17" class="pop-intro">17</a></h2>
 
 <p><strong>Individual/peer</strong></p>
 
@@ -217,13 +217,14 @@ export default {
   mounted() {
 
 
-    $('.pop').click(function (e) {
+    $('.pop-intro').click(function (e) {
       // Prevent footnote click in modal
       e.preventDefault();
     })
 
     // Display reference in Bootstrap popover
-    $('.pop').popover({
+    // Note: Give body page and modal page different classnames for popovers
+    $('.pop-intro').popover({
       trigger: 'hover',
       placement: 'auto right',
       html: true,
@@ -247,7 +248,7 @@ a {font-weight: 700; color: #888}
 a {
    outline: 0 !important;
 }
-a[class="pop"] {
+a[class="pop-intro"] {
     position: relative; top: -0.4em; font-size: 80%;
     color: #444;
     outline:0 !important;
