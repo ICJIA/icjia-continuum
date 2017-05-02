@@ -1,27 +1,5 @@
 <template lang="html">
 <div class="modalHelper">
-  <!-- <div class="modal fade" :id="id" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header" style="background: #aaa; color: #fff">
-          <h5 class="modal-title" >
-            <slot name="title"></slot></h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <slot name="body"></slot>
-        </div>
-        <div class="modal-footer">
-
-          <a class="btn btn-primary" >Download PDF</a>
-          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-
-        </div>
-      </div>
-    </div>
-  </div> -->
 
 
   <div class="modal fade" :id="id" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -29,9 +7,9 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span style="font-weight: 900" aria-hidden="true" >X</span></button>
-        <h4 class="modal-title" id="myModalLabel"><slot name="title"></slot></h4>
+        <h4 class="modal-title"><slot name="title"></slot></h4>
       </div>
-      <div class="modal-body">
+      <div class="modal-body" style="padding-left: 35px; padding-right: 35px;">
         <slot name="body"></slot>
       </div>
       <div class="modal-footer">
@@ -51,17 +29,48 @@
 export default {
 
   methods: {
-    // printModal: function (event) {
-    //   console.log(this.$el.querySelector('.modal-body'))
-    //
-    // }
-
 
     parseFilename (pdf) {
       // strip path -- leave filename for PDF download
       return pdf.split('\\').pop().split('/').pop();
     }
   },
+
+  mounted() {
+
+    $(function() {
+
+      $('.tt').click(function (e) {
+        // Prevent footnote click in modal
+        e.preventDefault();
+      })
+
+      // Display reference in Bootstrap popover
+      $('.pop').popover({
+        trigger: 'hover',
+        placement: 'auto right',
+        viewport: '.modal',
+        html: true,
+        title: '<strong>REFERENCE</strong>',
+        content: function getFootnote() {
+          var el = $(this).attr('href')
+          //console.log('Hover el: ', el)
+          //console.log('test: ',$(el).text())
+          return $(el).text()
+        }
+      });
+
+
+
+
+
+
+});
+
+
+  },
+
+
 
   props: ['id','pdf'],
 
@@ -74,5 +83,7 @@ button.close {color: #000 !important}
 .modal-header {background: #aaa; color: #fff}
 .modal-title {font-family: 'Lato', sans-serif; font-weight: 700; text-transform: uppercase;}
 button.btn:hover {cursor: pointer; cursor: hand;}
+.pop {position: relative; top: -0.5em; font-size: 80%;}
+
 
 </style>

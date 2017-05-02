@@ -7,34 +7,34 @@ import { modal5 } from '@/modals/modal5.js'
 const modalMap = [
     {
         id: 'exampleModalLong1',
-        title: 'Sample Title Object 1',
+        title: 'FAMILY-BASED PREVENTION PROGRAMS',
         pdf: '/static/pdf/test.pdf',
         body: modal1
     },
-    {
-        id: 'exampleModalLong2',
-        title: 'Sample Title Object 2',
-        pdf: '/static/pdf/test.pdf',
-        body: modal2
-    },
-    {
-        id: 'exampleModalLong3',
-        title: 'Sample Title Object 3',
-        pdf: '/static/pdf/test.pdf',
-        body: modal3
-    },
-    {
-        id: 'exampleModalLong4',
-        title: 'Sample Title Object 4',
-        pdf: '/static/pdf/test.pdf',
-        body: modal4
-    },
-    {
-        id: 'exampleModalLong5',
-        title: 'Sample Title Object 5',
-        pdf: '/static/pdf/test.pdf',
-        body: modal5
-    }
+    // {
+    //     id: 'exampleModalLong2',
+    //     title: 'Sample Title Object 2',
+    //     pdf: '/static/pdf/test.pdf',
+    //     body: modal2
+    // },
+    // {
+    //     id: 'exampleModalLong3',
+    //     title: 'Sample Title Object 3',
+    //     pdf: '/static/pdf/test.pdf',
+    //     body: modal3
+    // },
+    // {
+    //     id: 'exampleModalLong4',
+    //     title: 'Sample Title Object 4',
+    //     pdf: '/static/pdf/test.pdf',
+    //     body: modal4
+    // },
+    // {
+    //     id: 'exampleModalLong5',
+    //     title: 'Sample Title Object 5',
+    //     pdf: '/static/pdf/test.pdf',
+    //     body: modal5
+    // }
 ]
 
 export {modalMap}

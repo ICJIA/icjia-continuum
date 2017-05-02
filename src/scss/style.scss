@@ -347,6 +347,7 @@ header {
 
 		.cd-read-more, .cd-date {
 			@include font-size(14px);
+
 		}
 	}
 
@@ -406,6 +407,9 @@ header {
 		}
 	}
 }
+
+.cd-container-list {font-size: 16px}
+button.cd-container-read-more {margin-top: 20px !important;}
 
 @include MQ(L) {
 	/* inverse bounce effect on even content blocks */
@@ -594,3 +598,7 @@ ul.sidebar-nav {margin-top: 15px !important}
 {
     width: 90% !important; /* your width */
 }
+
+.footnotes {padding-left: 20px; padding-right: 20px;}
+.footnotes ol li {font-size: 12px;}
+.footnotes ol li {margin-bottom: 10px}
