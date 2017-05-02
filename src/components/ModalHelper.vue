@@ -14,7 +14,7 @@
       </div>
       <div class="modal-footer">
           <a class="btn btn-primary" :href="pdf" :download="parseFilename(pdf)"><i class="fa fa-file-pdf-o" aria-hidden="true">&nbsp;&nbsp;</i>Download PDF</a>
-        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary btn-modal" data-dismiss="modal">Close</button>
       </div>
     </div>
   </div>

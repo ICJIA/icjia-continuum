@@ -35,7 +35,7 @@
 <li>Increase effective communication skills among family members.</li>
 </ul>
 
-<button type="button" class="btn btn-primary cd-container-read-more" data-toggle="modal" data-target="#modal1">
+<button type="button" class="btn btn-primary btn-modal cd-container-read-more" data-toggle="modal" data-target="#modal1">
   Read More
 </button>
 

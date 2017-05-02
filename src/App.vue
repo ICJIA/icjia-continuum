@@ -42,8 +42,13 @@ export default {
         $(function() {
 
 
-
-
+          // Sidebar close helper.
+          $('#wrapper').click(function(e) {
+            var nn = e.target.nodeName
+            if (nn === 'NAV' || nn === 'DIV' || nn === 'SECTION') {
+              $("#wrapper").removeClass("toggled");
+            }
+          })
 
           // custom scrollspy for adding 'active' class to sidenav
 
@@ -65,6 +70,8 @@ export default {
                   }
               });
           });
+
+
 
 
 
@@ -154,5 +161,8 @@ export default {
 .fade-enter, .fade-leave-active {
   opacity: 0
 }
+
+#wrapper {z-index: -1}
+.btn-modal {z-index: 10000}
 
 </style>
