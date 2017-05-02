@@ -40,7 +40,7 @@ export default {
 
     $(function() {
 
-      $('.tt').click(function (e) {
+      $('.pop').click(function (e) {
         // Prevent footnote click in modal
         e.preventDefault();
       })
