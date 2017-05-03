@@ -43,13 +43,13 @@ export default {
 
 
           // Sidebar close helper. This is hacky -- not sure how else to target everything but buttons
-          $('#wrapper').click(function(e) {
-            var nn = e.target.nodeName
-            console.log('node: ',nn)
-            if (nn === 'NAV' || nn === 'DIV' || nn === 'SECTION' || nn === 'P' || nn === 'LI') {
-              $("#wrapper").removeClass("toggled");
-            }
-          })
+          // $('#wrapper').click(function(e) {
+          //   var nn = e.target.nodeName
+          //   console.log('node: ',nn)
+          //   if (nn === 'NAV' || nn === 'DIV' || nn === 'SECTION' || nn === 'P' || nn === 'LI') {
+          //     $("#wrapper").removeClass("toggled");
+          //   }
+          // })
 
           // custom scrollspy for adding 'active' class to sidenav
 
