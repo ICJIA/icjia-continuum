@@ -104,8 +104,8 @@
       "node": "7.7.3",
       "npm": ">= 3.0.0"
     },
-    "name": "continuum.icjia.cloud",
-    "alias": "continuum.icjia.cloud",
+    "name": "continuum",
+    "alias": "continuum",
     "env": {
       "NODE_ENV": "production"
     }
