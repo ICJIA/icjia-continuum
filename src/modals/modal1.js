@@ -12,7 +12,7 @@ const modal1 =
 <li>inconsistent and harsh punishment practices;</li>
 <li>lack of parental supervision and monitoring;</li>
 <li>low levels of family bonding; and/or</li>
-<li>high levels of family conflict.<a href="#fn_1_2" id="fnref:2" class="pop-modal1">2</a></li>
+<li>high levels of family conflict.<a role="button" data-toggle="popover" data-trigger="focus"  href="#fn_1_2" id="fnref:2" class="pop-modal1">2</a></li>
 </ul>
 
 <p><strong>Goals:</strong></p>
