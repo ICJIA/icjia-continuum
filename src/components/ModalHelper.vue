@@ -7,9 +7,9 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span style="font-weight: 900" aria-hidden="true" >X</span></button>
-        <h4 class="modal-title" style="padding: 5px"><slot name="title"></slot></h4>
+        <h4 class="modal-title"><slot name="title"></slot></h4>
       </div>
-      <div class="modal-body" style="padding-top: 80px; padding-left: 35px; padding-right: 35px;">
+      <div class="modal-body" style="padding-left: 35px; padding-right: 35px;">
         <slot name="body"></slot>
       </div>
       <div class="modal-footer">

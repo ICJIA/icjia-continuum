@@ -14,12 +14,26 @@
 			</div> <!-- cd-timeline-img -->
 
 			<div class="cd-timeline-content">
-        <h2 id="family-based-prevention-programs"><strong>Intercept 0</strong></h2>
+        <h2 id="family-based-prevention-programs"><strong>Family-Based Prevention Programs</strong></h2>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur auctor augue erat, eget tincidunt risus pretium vel. Cras eget velit justo. Nam volutpat egestas euismod. Nulla facilisi. Mauris varius neque id odio faucibus, at tristique orci interdum. Morbi in ultrices diam. Phasellus elementum, elit ac hendrerit consectetur, justo ex porttitor odio, quis tempus nibh felis eget diam. Nam tristique purus nunc, ut congue mauris interdum eu. Sed at justo bibendum, lobortis tellus nec, placerat velit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque eget laoreet ipsum. Nullam gravida, justo vel hendrerit scelerisque, enim magna viverra eros, nec sodales arcu diam vel odio.
-</p>
-<p>
-  justo ex porttitor odio, quis tempus nibh felis eget diam. Nam tristique purus nunc, ut congue mauris interdum eu. Sed at justo bibendum, lobortis tellus nec, placerat velit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque eget laoreet ipsum. Nullam gravida, justo vel hendrerit scelerisque, enim magna viverra eros, nec sodales arcu diam vel odio.</p>
+<p><strong>Description:</strong> Families are important factors in the lives of youth; parenting skills and the modeling of prosocial behavior and attitudes can influence youths’ substance use. Factors that may increase a youth’s likelihood to exhibit antisocial behaviors, such as substance use include</p>
+
+<ul class="cd-container-list">
+<li>inconsistent and harsh punishment practices;</li>
+<li>lack of parental supervision and monitoring;</li>
+<li>low levels of family bonding; and/or</li>
+<li>high levels of family conflict.</li>
+</ul>
+
+<p><strong>Goals:</strong></p>
+
+<ul class="cd-container-list">
+<li>Increase opportunities for appropriate involvement in activities with family.</li>
+<li>Increase parental use of reinforcement and parental management skills. </li>
+<li>Increase attachment and commitment to family.</li>
+<li>Enhance family resilience.</li>
+<li>Increase effective communication skills among family members.</li>
+</ul>
 
 <button type="button" class="btn btn-primary btn-modal cd-container-read-more" data-toggle="modal" data-target="#modal1">
   Read More
@@ -59,11 +73,9 @@
     </div> <!-- cd-timeline-img -->
 
     <div class="cd-timeline-content">
-      <h2>Intercept 1</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur auctor augue erat, eget tincidunt risus pretium vel. Cras eget velit justo. Nam volutpat egestas euismod. Nulla facilisi. Mauris varius neque id odio faucibus, at tristique orci interdum. Morbi in ultrices diam. Phasellus elementum, elit ac hendrerit consectetur, justo ex porttitor odio, quis tempus nibh felis eget diam. Nam tristique purus nunc, ut congue mauris interdum eu. Sed at justo bibendum, lobortis tellus nec, placerat velit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque eget laoreet ipsum. Nullam gravida, justo vel hendrerit scelerisque, enim magna viverra eros, nec sodales arcu diam vel odio.
-      </p>
-      <p>
-        justo ex porttitor odio, quis tempus nibh felis eget diam. Nam tristique purus nunc, ut congue mauris interdum eu. Sed at justo bibendum, lobortis tellus nec, placerat velit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque eget laoreet ipsum. Nullam gravida, justo vel hendrerit scelerisque, enim magna viverra eros, nec sodales arcu diam vel odio.</p>
+      <h2>Overdose Reversal</h2>
+      <p>In Illinois, heroin-related deaths rose from 149 to 681 between 2010 and 2014, with significant increases in Cook County (CDC Opioid Overdose State Data, 2016). With the rise in heroin and opioid use and overdoses, Illinois passed the Heroin Crisis Act in 2014 [20 ILCS 301/5-23], requiring police officers and other first responders to carry Naloxone—an opioid antagonist used to counter effects of opioid overdose—to help prevent fatal overdoses. Naloxone (also known by the brand name Narcan) is a medicine that is administered by nasal spray or injection to reverse an opioid overdose. Naloxone cannot be used to get the same effects as heroin, and is not addictive. Emergency medical professionals have used it for decades. The Heroin Crisis Act also allows pharmacies to dispense naloxone to individuals without a prescription. More than 220 law enforcement agencies in 24 states carry Naloxone to help prevent fatal overdoses of opioid.
+</p>
 
 <button type="button" class="btn btn-primary cd-container-read-more" data-toggle="modal" data-target="#modal2">
 Read More
@@ -74,17 +86,15 @@ Read More
     </div> <!-- cd-timeline-content -->
   </div> <!-- cd-timeline-block -->
 
-  <div class="cd-timeline-block" id="section-2i2">
+  <div class="cd-timeline-block">
     <div class="cd-timeline-img cd-child">
       <i class="fa fa-child fa-2x" aria-hidden="true"></i>
     </div> <!-- cd-timeline-img -->
 
     <div class="cd-timeline-content">
-      <h2>Intercept 2</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur auctor augue erat, eget tincidunt risus pretium vel. Cras eget velit justo. Nam volutpat egestas euismod. Nulla facilisi. Mauris varius neque id odio faucibus, at tristique orci interdum. Morbi in ultrices diam. Phasellus elementum, elit ac hendrerit consectetur, justo ex porttitor odio, quis tempus nibh felis eget diam. Nam tristique purus nunc, ut congue mauris interdum eu. Sed at justo bibendum, lobortis tellus nec, placerat velit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque eget laoreet ipsum. Nullam gravida, justo vel hendrerit scelerisque, enim magna viverra eros, nec sodales arcu diam vel odio.
-      </p>
-      <p>
-        justo ex porttitor odio, quis tempus nibh felis eget diam. Nam tristique purus nunc, ut congue mauris interdum eu. Sed at justo bibendum, lobortis tellus nec, placerat velit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque eget laoreet ipsum. Nullam gravida, justo vel hendrerit scelerisque, enim magna viverra eros, nec sodales arcu diam vel odio.</p>
+      <h2>Pre-Arrest Diversion</h2>
+      <p>In 2015, drug offenses accounted for 99,953 arrests in 2015 in Illinois (Illinois State Police, 2015). Pre-arrest diversion provides the ability to individuals with substance use disorders to receive help, prior to entry into the criminal justice system. The first program of this kind is the ANGEL program out of Gloucester, Massachusetts. Individuals with substance use disorders—without fear of arrest—can voluntarily turn in drugs and drug paraphernalia and is provided assistance in receiving substance abuse treatment (PAARI, 2016). Law enforcement agencies in Dixon, Fairview Heights, Lee County, Rolling Meadows, Whiteside County, Rock Falls, Morrison, and Sterling have partnered with Police Assisted Addiction and Recovery Initiative (PAARI). In 2015, the Dixon Police Department and the Lee County Sheriff’s Department created the Safe Passage initiative serving Lee, Livingston, and Whiteside Counties. In Lake County, Mundelein Police Department, in addition to others, created A Way Out initiative for pre-arrest diversion.
+</p>
 <button type="button" class="btn btn-primary cd-container-read-more"data-toggle="modal" data-target="#modal3">
 Read More
 </button>

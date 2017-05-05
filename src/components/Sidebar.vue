@@ -25,25 +25,9 @@
                 </li>
                 <li>
                     <a href="#section-1" v-scroll-to="{el: '#section-1',offset: -50}" >Prevention Programs</a>
-                    <ul class="subnav">
-                      <li style="font-size: 12px">
-                        <a href="#dsection-1i0" v-scroll-to="{el: '#section-1',offset: -50}" >Intercept 0
-                        </a>
-                      </li>
-                    </ul>
                 </li>
                 <li>
                     <a href="#section-2" v-scroll-to="{el: '#section-2',offset: -50}" >Law Enforcement</a>
-                    <ul class="subnav">
-                      <li style="font-size: 12px">
-                        <a href="#section-2i1" v-scroll-to="{el: '#section-2',offset: -50}" >Intercept 1
-                        </a>
-                      </li>
-                      <li style="font-size: 12px">
-                        <a href="#section-2i1" v-scroll-to="{el: '#section-2i2',offset: -80}" >Intercept 2
-                        </a>
-                      </li>
-                    </ul>
                 </li>
                 <li>
                     <a href="#conclusion" v-scroll-to="{el: '#conclusion',offset: -50}">Conclusion</a>
@@ -52,22 +36,14 @@
             </ul>
         </nav>
         <!-- /#sidebar-wrapper -->
-        <section class="navbar navbar-inverse navbar-fixed-top" id="topnav">
+        <nav class="navbar navbar-inverse navbar-fixed-top" >
   <div class="container-fluid">
 
     <div class="navbar-header">
 
       <div class="navbar-brand" id="menu-toggle">
-
-        <!-- <button class="hamburger hamburger--arrow" type="button" >
-  <span class="hamburger-box">
-    <span class="hamburger-inner"></span>
-  </span>
-</button> -->
-        <span id="burger"><i class="fa fa-1x fa-bars " ></i></span>
-
-
-        &nbsp;&nbsp;<span class="text-center" id="nav-title">REDUCING SUBSTANCE USE DISORDERS<span id=
+        <span ><i class="fa fa-1x fa-bars " style="color: #fff"></i></span>
+        &nbsp;&nbsp;<span class="text-center">REDUCING SUBSTANCE USE DISORDERS<span id=
           "full-title"> AND RELATED OFFENDING</span></span>
         </div>
 
@@ -76,7 +52,7 @@
 
 
   </div><!-- /.container-fluid -->
-</section>
+</nav>
 
 
 
@@ -198,13 +174,13 @@ $('ul#sidebar-nav li a').click(function(e) {
 
 .sidebar-nav li {
     text-indent: 20px;
-    line-height: 32px;
+    line-height: 40px;
 }
 
 .sidebar-nav li a {
     display: block;
     text-decoration: none;
-    color: #fff;
+    color: #999999;
 }
 
 .sidebar-nav li a:hover {
@@ -267,28 +243,15 @@ $('ul#sidebar-nav li a').click(function(e) {
 
 li a.active {color: #fff; background: #999}
 
-.navbar-brand:hover { cursor: pointer; cursor: hand; color: #555 }
+.navbar-brand:hover { cursor: pointer; cursor: hand; }
 
 .navbar-inverse .navbar-brand:focus, .navbar-inverse .navbar-brand {
-    color: #fff;
+    color: #fff !important;
     background-color: transparent;
     font-weight: 900;
 }
 
 ul.subnav {list-style: none; margin-left: 15px; margin-bottom: 10px;}
-
-ul.subnav a {color: #aaa;}
-
-
-.navbar-brand:hover {color: #aaa !important}
-
-.hamburger {padding: 0; color: #fff !important}
-.hamburger-box {
-    position: relative;
-    display: inline-block;
-    width: 50px;
-    height: 10px;
-}
 
 
 </style>
