@@ -47,7 +47,7 @@
 
             $(function() {
 
-              
+
 
 
                 // Vertical timeline Cody House: https://codyhouse.co/gem/vertical-timeline/

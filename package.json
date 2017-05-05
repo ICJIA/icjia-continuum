@@ -1,12 +1,12 @@
 {
-  "name": "vue-spatest01",
+  "name": "continuum",
   "version": "1.0.0",
-  "description": "A Vue.js project",
+  "description": "ICJIA Continuum project",
   "author": "cschweda <cschweda@gmail.com>",
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
-    "start": "node build/dev-server.js",
+    "start": "serve ./dist -s",
     "build": "node build/build.js",
     "unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run",
     "e2e": "node test/e2e/runner.js",
@@ -14,7 +14,8 @@
     "routes": "node src/generatePrerenderRoutes.js",
     "build:prerender": "npm run routes && npm run build --prerender",
     "server": "serve ./dist -s",
-    "build:serve": "npm run build && npm run server"
+    "build:serve": "npm run build && npm run server",
+    "now:deploy": "npm run build && now ./dist -s"
   },
   "dependencies": {
     "vue": "^2.2.6",
@@ -98,6 +99,16 @@
     "webpack-dev-middleware": "^1.10.0",
     "webpack-hot-middleware": "^2.18.0",
     "webpack-merge": "^4.1.0"
+  },"now": {
+    "engines": {
+      "node": "7.7.3",
+      "npm": ">= 3.0.0"
+    },
+    "name": "continuum.icjia.cloud",
+    "alias": "continuum.icjia.cloud",
+    "env": {
+      "NODE_ENV": "production"
+    }
   },
   "engines": {
     "node": ">= 4.0.0",

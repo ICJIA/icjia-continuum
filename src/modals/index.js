@@ -23,18 +23,18 @@ const modalMap = [
         pdf: '/static/pdf/test.pdf',
         body: modal3
     },
-    // {
-    //     id: 'exampleModalLong4',
-    //     title: 'Sample Title Object 4',
-    //     pdf: '/static/pdf/test.pdf',
-    //     body: modal4
-    // },
-    // {
-    //     id: 'exampleModalLong5',
-    //     title: 'Sample Title Object 5',
-    //     pdf: '/static/pdf/test.pdf',
-    //     body: modal5
-    // }
+    {
+        id: 'exampleModalLong4',
+        title: 'Sample Title Object 4',
+        pdf: '/static/pdf/test.pdf',
+        body: modal4
+    },
+    {
+        id: 'exampleModalLong5',
+        title: 'Sample Title Object 5',
+        pdf: '/static/pdf/test.pdf',
+        body: modal5
+    }
 ]
 
 export {modalMap}
