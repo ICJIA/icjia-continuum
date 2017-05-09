@@ -51,8 +51,9 @@ export default {
           //   }
           // })
 
+          /////////////////////////////////////////////////////////
           // custom scrollspy for adding 'active' class to sidenav
-
+          /////////////////////////////////////////////////////////
           let sections = $('section')
           let nav = $('nav#sidebar-wrapper')
 
@@ -66,8 +67,8 @@ export default {
                       bottom = top + $(this).outerHeight();
                   if (cur_pos >= top && cur_pos <= bottom) {
                       //console.log('Section ID: ', $(this).attr('id'))
-                      nav.find('a').removeClass('active');
-                      nav.find('a[href="#' + $(this).attr('id') + '"]').addClass('active');
+                      nav.find('a.section').removeClass('active');
+                      nav.find('a.section[href="#' + $(this).attr('id') + '"]').addClass('active');
                   }
               });
           });

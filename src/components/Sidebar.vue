@@ -6,7 +6,7 @@
 
 
                 <li>
-                    <a   href="#section-0">Introduction</a>
+                    <a   href="#section-0" class="section active">Introduction</a>
                     <ul class="subnav">
                       <li style="font-size: 12px">
                         <a href="#defining-evidence-based-practices" data-offset="-65">Defining EB Practices
@@ -24,7 +24,7 @@
                     </ul>
                 </li>
                 <li>
-                    <a    href="#section-1" data-offset="-50" >Prevention Programs</a>
+                    <a    href="#section-1" data-offset="-50" class="section">Prevention Programs</a>
                     <ul class="subnav">
                       <li style="font-size: 12px">
                         <a    href="#section-1" data-offset="-50" >Intercept 0
@@ -33,7 +33,7 @@
                     </ul>
                 </li>
                 <li>
-                    <a    href="#section-2" data-offset="-50" >Law Enforcement</a>
+                    <a    href="#section-2" data-offset="-50" class="section">Law Enforcement</a>
                     <ul class="subnav">
                       <li style="font-size: 12px">
                         <a    href="#section-2" data-offset="-50" >Intercept 1
@@ -46,7 +46,7 @@
                     </ul>
                 </li>
                 <li>
-                    <a    href="#conclusion" data-offset="-50">Conclusion</a>
+                    <a    href="#conclusion" data-offset="-50" class="section">Conclusion</a>
                 </li>
 
             </ul>
@@ -101,7 +101,7 @@ export default {
 
   mounted() {
 
-    // Select all links with hashes
+  // Select all links with hashes
 $('a[href*="#"]')
   // Remove links that don't actually link to anything
   .not('[href="#"]')
@@ -130,7 +130,7 @@ $('a[href*="#"]')
           // Must change focus!
           var $target = $(target);
           $target.focus();
-          $(this).removeClass("active")
+          //$(this).removeClass("active")
           if ($target.is(":focus")) { // Checking if the target was focused
             return false;
           } else {
