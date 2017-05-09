@@ -14,18 +14,12 @@
     "routes": "node src/generatePrerenderRoutes.js",
     "start": "serve ./dist -s",
     "now:deploy": "npm run spa && npm run routes && npm run build:dev --prerender && now ./dist -s",
-    "now:deploy:alias": "npm run spa && npm run routes && npm run build:dev --prerender && now ./dist -s && now alias",
     "spa": "cd static/prerender-spa-plugin && npm i",
     "unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run",
     "e2e": "node test/e2e/runner.js",
     "test": "npm run unit && npm run e2e"
-
   },
   "dependencies": {
-    "vue": "^2.2.6",
-    "vue-router": "^2.3.1"
-  },
-  "devDependencies": {
     "animate.css": "^3.5.2",
     "autoprefixer": "^6.7.2",
     "babel-core": "^6.22.1",
@@ -87,13 +81,16 @@
     "sass-loader": "^6.0.3",
     "selenium-server": "^3.0.1",
     "semver": "^5.3.0",
+    "serve": "^5.1.5",
     "shelljs": "^0.7.6",
     "sinon": "^2.1.0",
     "sinon-chai": "^2.8.0",
     "tether": "^1.4.0",
     "url-loader": "^0.5.8",
+    "vue": "^2.2.6",
     "vue-loader": "^11.3.4",
     "vue-meta": "^0.5.6",
+    "vue-router": "^2.3.1",
     "vue-scrollto": "^2.6.7",
     "vue-style-loader": "^2.0.5",
     "vue-template-compiler": "^2.2.6",
@@ -103,7 +100,9 @@
     "webpack-dev-middleware": "^1.10.0",
     "webpack-hot-middleware": "^2.18.0",
     "webpack-merge": "^4.1.0"
-  },"now": {
+  },
+  "devDependencies": {},
+  "now": {
     "engines": {
       "node": "7.10.0",
       "npm": ">= 3.0.0"
