@@ -290,7 +290,7 @@ $('ul#sidebar-nav li a').click(function(e) {
 .sidebar-nav li a:hover {
     text-decoration: none;
     color: #fff;
-    background: #bbb
+    background: #555
 }
 
 .sidebar-nav li a:active,
@@ -345,7 +345,7 @@ $('ul#sidebar-nav li a').click(function(e) {
 }
 
 
-li a.active {color: #fff; background: #999}
+li a.active {color: #fff; background: #333}
 
 .navbar-brand:hover { cursor: pointer; cursor: hand; color: #555 }
 

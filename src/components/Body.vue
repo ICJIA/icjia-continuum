@@ -183,6 +183,48 @@ Read More
 
 
 
+<section id="section-5">
+<div class="text-center">
+  <div class="section-title">
+    Community Corrections
+  </div>
+  <!-- <div><i class="fa fa-angle-down fa-2x" style="color: #fff; margin-top: -20px;" aria-hidden="true"></i></div> -->
+</div>
+<div id="cd-timeline-1" class="cd-container">
+  <div class="cd-timeline-block">
+    <div class="cd-timeline-img cd-bullhorn">
+      <i class="fa fa-bullhorn fa-2x" aria-hidden="true"></i>
+    </div> <!-- cd-timeline-img -->
+
+    <div class="cd-timeline-content">
+      <h2 id="section-5i5">Intercept 5</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur auctor augue erat, eget tincidunt risus pretium vel. Cras eget velit justo. Nam volutpat egestas euismod. Nulla facilisi. Mauris varius neque id odio faucibus, at tristique orci interdum. Morbi in ultrices diam. Phasellus elementum, elit ac hendrerit consectetur, justo ex porttitor odio, quis tempus nibh felis eget diam. Nam tristique purus nunc, ut congue mauris interdum eu. Sed at justo bibendum, lobortis tellus nec, placerat velit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque eget laoreet ipsum. Nullam gravida, justo vel hendrerit scelerisque, enim magna viverra eros, nec sodales arcu diam vel odio.
+      </p>
+      <p>
+        justo ex porttitor odio, quis tempus nibh felis eget diam. Nam tristique purus nunc, ut congue mauris interdum eu. Sed at justo bibendum, lobortis tellus nec, placerat velit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque eget laoreet ipsum. Nullam gravida, justo vel hendrerit scelerisque, enim magna viverra eros, nec sodales arcu diam vel odio.</p>
+
+<button type="button" class="btn btn-primary cd-container-read-more" data-toggle="modal" data-target="#modal2">
+Read More
+</button>
+
+
+
+    </div> <!-- cd-timeline-content -->
+  </div> <!-- cd-timeline-block -->
+
+
+
+
+</div> <!-- cd-timeline -->
+
+
+</section>
+
+
+
+
+
+
 
 
 
