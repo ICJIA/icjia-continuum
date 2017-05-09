@@ -6,47 +6,47 @@
 
 
                 <li>
-                    <a href="#section-0" v-scroll-to="'#section-0'" class="active">Introduction</a>
+                    <a   href="#section-0">Introduction</a>
                     <ul class="subnav">
                       <li style="font-size: 12px">
-                        <a href="#defining-evidence-based-practices" v-scroll-to="{el: '#defining-evidence-based-practices',offset: -70}" >Defining EB Practices
+                        <a href="#defining-evidence-based-practices" data-offset="-65">Defining EB Practices
                         </a>
                       </li>
                       <li style="font-size: 12px">
-                        <a href="#evidence-based-risk-and-protective-factors" v-scroll-to="{el: '#evidence-based-risk-and-protective-factors',offset: -70}" >
+                        <a   href="#evidence-based-risk-and-protective-factors" data-offset="-70">
                           EB Risk and Protective Factors
                         </a>
                         </li>
                       <li style="font-size: 12px">
-                        <a href="#references" v-scroll-to="{el: '#references',offset: -30}" >
+                        <a    href="#references" data-offset="-30" >
                           References
                         </a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="#section-1" v-scroll-to="{el: '#section-1',offset: -50}" >Prevention Programs</a>
+                    <a    href="#section-1" data-offset="-50" >Prevention Programs</a>
                     <ul class="subnav">
                       <li style="font-size: 12px">
-                        <a href="#dsection-1i0" v-scroll-to="{el: '#section-1',offset: -50}" >Intercept 0
+                        <a    href="#section-1" data-offset="-50" >Intercept 0
                         </a>
                       </li>
                     </ul>
                 </li>
                 <li>
-                    <a href="#section-2" v-scroll-to="{el: '#section-2',offset: -50}" >Law Enforcement</a>
+                    <a    href="#section-2" data-offset="-50" >Law Enforcement</a>
                     <ul class="subnav">
                       <li style="font-size: 12px">
-                        <a href="#section-2i1" v-scroll-to="{el: '#section-2',offset: -50}" >Intercept 1
+                        <a    href="#section-2" data-offset="-50" >Intercept 1
                         </a>
                       </li>
                       <li style="font-size: 12px">
-                        <a href="#section-2i1" v-scroll-to="{el: '#section-2i2',offset: -80}" >Intercept 2
+                        <a href="#section-2i2" data-offset="-50">Intercept 2
                         </a>
                       </li>
                     </ul>
                 </li>
                 <li>
-                    <a href="#conclusion" v-scroll-to="{el: '#conclusion',offset: -50}">Conclusion</a>
+                    <a    href="#conclusion" data-offset="-50">Conclusion</a>
                 </li>
 
             </ul>
@@ -101,6 +101,47 @@ export default {
 
   mounted() {
 
+    // Select all links with hashes
+$('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+      &&
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      var pageOffset = $(this).data("offset") || 0
+
+      console.log(pageOffset)
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top + pageOffset
+        }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          $(this).removeClass("active")
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      }
+    }
+  });
+
 
 
 $(window).resize(function() {
@@ -111,7 +152,7 @@ $(window).resize(function() {
 
 
 $('ul#sidebar-nav li a').click(function(e) {
-        e.preventDefault();
+        //e.preventDefault();
         //$('a').removeClass('active');
         //$(this).addClass('active');
     });
@@ -289,6 +330,12 @@ ul.subnav a {color: #aaa;}
     width: 50px;
     height: 10px;
 }
+
+*:focus {
+    outline: none;
+}
+
+
 
 
 </style>

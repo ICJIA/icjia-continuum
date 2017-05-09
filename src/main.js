@@ -17,8 +17,8 @@ Vue.use(VueRouter)
 import Meta from 'vue-meta'
 Vue.use(Meta)
 
-import VueScrollTo from 'vue-scrollto';
-Vue.use(VueScrollTo)
+// import VueScrollTo from 'vue-scrollto';
+// Vue.use(VueScrollTo)
 
 const router = new VueRouter({
     mode: 'history',

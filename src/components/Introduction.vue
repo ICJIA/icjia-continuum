@@ -172,7 +172,7 @@
         </div>
 
 
-        <div class="row">
+        <!-- <div class="row">
             <div class="col-md-12" style="margin-top: 10px">
               <div class="text-center">
                 <h2 class="head-splash-sub no-rule" style="margin-bottom: -10px">View the Continuum</h2>
@@ -181,7 +181,7 @@
 
 
             </div>
-          </div>
+          </div> -->
 
 
         <div class="row row-rule">
