@@ -6,16 +6,20 @@
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
+    "build:dev": "node build/build.js",
+    "build": "npm run build:dev",
+    "build:report": "npm run build:dev --report",
+    "build:prerender": "npm run spa & npm run routes && npm run build:dev --prerender",
+    "build:start": "npm run build:dev && npm run start",
+    "routes": "node src/generatePrerenderRoutes.js",
     "start": "serve ./dist -s",
-    "build": "node build/build.js",
+    "now:deploy": "npm run spa && npm run routes && npm run build:dev --prerender && now ./dist -s",
+    "now:deploy:alias": "npm run spa && npm run routes && npm run build:dev --prerender && now ./dist -s && now alias",
+    "spa": "cd static/prerender-spa-plugin && npm i",
     "unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run",
     "e2e": "node test/e2e/runner.js",
-    "test": "npm run unit && npm run e2e",
-    "routes": "node src/generatePrerenderRoutes.js",
-    "build:prerender": "npm run routes && npm run build --prerender",
-    "server": "serve ./dist -s",
-    "build:serve": "npm run build && npm run server",
-    "now:deploy": "npm run build && now ./dist -s"
+    "test": "npm run unit && npm run e2e"
+
   },
   "dependencies": {
     "vue": "^2.2.6",
@@ -101,7 +105,7 @@
     "webpack-merge": "^4.1.0"
   },"now": {
     "engines": {
-      "node": "7.7.3",
+      "node": "7.10.0",
       "npm": ">= 3.0.0"
     },
     "name": "continuum",
@@ -111,7 +115,7 @@
     }
   },
   "engines": {
-    "node": ">= 4.0.0",
+    "node": ">= 7.10.0",
     "npm": ">= 3.0.0"
   },
   "browserslist": [
