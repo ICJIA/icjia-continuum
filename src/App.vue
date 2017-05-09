@@ -67,8 +67,8 @@ export default {
                       bottom = top + $(this).outerHeight();
                   if (cur_pos >= top && cur_pos <= bottom) {
                       //console.log('Section ID: ', $(this).attr('id'))
-                      nav.find('a.section').removeClass('active');
-                      nav.find('a.section[href="#' + $(this).attr('id') + '"]').addClass('active');
+                      //nav.find('a.section').removeClass('active');
+                      //nav.find('a.section[href="#' + $(this).attr('id') + '"]').addClass('active');
                   }
               });
           });

@@ -6,7 +6,7 @@
 
 
                 <li>
-                    <a   href="#section-0" class="section active">Introduction</a>
+                    <a   href="#section-0" class="section">Introduction</a>
                     <ul class="subnav">
                       <li style="font-size: 12px">
                         <a href="#defining-evidence-based-practices" data-offset="-65">Defining EB Practices
@@ -18,7 +18,7 @@
                         </a>
                         </li>
                       <li style="font-size: 12px">
-                        <a    href="#references" data-offset="-30" >
+                        <a    href="#references" data-offset="-90" >
                           References
                         </a></li>
                     </ul>
@@ -27,7 +27,7 @@
                     <a    href="#section-1" data-offset="-50" class="section">Prevention Programs</a>
                     <ul class="subnav">
                       <li style="font-size: 12px">
-                        <a    href="#section-1" data-offset="-50" >Intercept 0
+                        <a    href="#section-1i0" data-offset="-95" >Intercept 0
                         </a>
                       </li>
                     </ul>
@@ -36,15 +36,54 @@
                     <a    href="#section-2" data-offset="-50" class="section">Law Enforcement</a>
                     <ul class="subnav">
                       <li style="font-size: 12px">
-                        <a    href="#section-2" data-offset="-50" >Intercept 1
+                        <a    href="#section-2i1" data-offset="-95" >Intercept 1
                         </a>
                       </li>
                       <li style="font-size: 12px">
-                        <a href="#section-2i2" data-offset="-50">Intercept 2
+                        <a href="#section-2i2" data-offset="-95">Intercept 2
                         </a>
                       </li>
                     </ul>
                 </li>
+
+                <li>
+                    <a    href="#section-3" data-offset="-50" class="section">Jails/Courts</a>
+                    <ul class="subnav">
+                      <li style="font-size: 12px">
+                        <a    href="#section-3i3" data-offset="-95" >Intercept 3
+                        </a>
+                      </li>
+
+                    </ul>
+                </li>
+
+
+                <li>
+                    <a    href="#section-4" data-offset="-50" class="section">Institutions and Reentry</a>
+                    <ul class="subnav">
+                      <li style="font-size: 12px">
+                        <a    href="#section-4i4" data-offset="-95" >Intercept 4
+                        </a>
+                      </li>
+
+                    </ul>
+                </li>
+
+
+                <li>
+                    <a    href="#section-5" data-offset="-50" class="section">Community Corrections</a>
+                    <ul class="subnav">
+                      <li style="font-size: 12px">
+                        <a    href="#section-5i5" data-offset="-95" >Intercept 5
+                        </a>
+                      </li>
+
+                    </ul>
+                </li>
+
+
+
+
                 <li>
                     <a    href="#conclusion" data-offset="-50" class="section">Conclusion</a>
                 </li>
