@@ -2,10 +2,6 @@
 // Custom Google Analytics injection. Modified from vue-ga
 ////////////////////////////////////////////////////////////////////////////////////
 
- // let gaTitle = '(not set)'
- // let gaTitlePrefix = 'ICJIA Continuum | '
- // let gaPath = ''
- // let gaID = 'UA-10798495-21'
 
 function appendScript() {
   const script = document.createElement('script')
@@ -53,10 +49,9 @@ export default function (id, prefix, router) {
      if (routes[o].path === stripTrailingSlash(from.fullPath, 1)) {
       title = routes[o].title
       path = routes[o].path
-      //console.log(title, path)
      }
    }
-
+   
    collect(id, prefix, title, path )
 
   })
