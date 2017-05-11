@@ -7,7 +7,7 @@ import { modal5 } from '@/modals/modal5.js'
 const modalMap = [
     {
         id: 'modal1',
-        title: 'FAMILY-BASED PREVENTION PROGRAMS',
+        title: 'Intercept 0',
         pdf: '/static/pdf/test.pdf',
         body: modal1
     },

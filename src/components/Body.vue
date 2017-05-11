@@ -52,7 +52,7 @@
   </div>
   <!-- <div><i class="fa fa-angle-down fa-2x" style="color: #fff; margin-top: -20px;" aria-hidden="true"></i></div> -->
 </div>
-<div id="cd-timeline-1" class="cd-container">
+<div id="cd-timeline-2" class="cd-container">
   <div class="cd-timeline-block">
     <div class="cd-timeline-img cd-bullhorn">
       <i class="fa fa-bullhorn fa-2x" aria-hidden="true"></i>
@@ -107,7 +107,7 @@ Read More
   </div>
   <!-- <div><i class="fa fa-angle-down fa-2x" style="color: #fff; margin-top: -20px;" aria-hidden="true"></i></div> -->
 </div>
-<div id="cd-timeline-1" class="cd-container">
+<div id="cd-timeline-3" class="cd-container">
   <div class="cd-timeline-block">
     <div class="cd-timeline-img cd-bullhorn">
       <i class="fa fa-bullhorn fa-2x" aria-hidden="true"></i>
@@ -148,7 +148,7 @@ Read More
   </div>
   <!-- <div><i class="fa fa-angle-down fa-2x" style="color: #fff; margin-top: -20px;" aria-hidden="true"></i></div> -->
 </div>
-<div id="cd-timeline-1" class="cd-container">
+<div id="cd-timeline-4" class="cd-container">
   <div class="cd-timeline-block">
     <div class="cd-timeline-img cd-bullhorn">
       <i class="fa fa-bullhorn fa-2x" aria-hidden="true"></i>

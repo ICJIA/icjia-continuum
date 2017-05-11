@@ -45,6 +45,7 @@
 
 
 
+
             $(function() {
 
 
@@ -52,7 +53,7 @@
 
                 // Vertical timeline Cody House: https://codyhouse.co/gem/vertical-timeline/
                 var timelineBlocks = $('.cd-timeline-block'),
-                    offset = 0.8;
+                    offset = 0.9;
 
                 //hide timeline blocks which are outside the viewport
                 hideBlocks(timelineBlocks, offset);
