@@ -53,7 +53,7 @@ export default function (id, prefix, router) {
      if (routes[o].path === stripTrailingSlash(from.fullPath, 1)) {
       title = routes[o].title
       path = routes[o].path
-      console.log(title, path)
+      //console.log(title, path)
      }
    }
 
