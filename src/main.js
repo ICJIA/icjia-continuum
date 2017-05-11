@@ -17,8 +17,7 @@ Vue.use(VueRouter)
 import Meta from 'vue-meta'
 Vue.use(Meta)
 
-// import VueScrollTo from 'vue-scrollto';
-// Vue.use(VueScrollTo)
+Vue.config.productionTip = true
 
 const router = new VueRouter({
     mode: 'history',
@@ -30,41 +29,59 @@ const router = new VueRouter({
     routes: routes
 })
 
-// ////////////////////// Custom Google Analytics injection. Modified from vue-ga
-// function appendScript() {
-//   const script = document.createElement('script')
-//   script.async = true
-//   script.src = 'https://www.google-analytics.com/analytics.js'
-//   document.body.appendChild(script)
-// }
-//
-// if (!window.ga) {
-//    appendScript()
-//    window.ga = window.ga || function () {
-//      (ga.q = ga.q || []).push(arguments)
-//    }
-//    ga.l = Number(new Date())
-//    ga('create', 'UA-10798495-20', 'auto')
-//  }
-//
-//  let gaTitle = '(not set)'
-//  let gaTitlePrefix = 'ICJIA Continuum | '
-//
-//  router.afterEach(from  => {
-//    let pageTitle = _.filter(router.options.routes, function(o) { return o.path === from.fullPath });
-//    if (pageTitle.length > 0) {
-//      gaTitle = pageTitle[0].title
-//    }
-//   //console.log('ga title: ', title)
-//   ga('set', 'page', from.fullPath)
-//   ga('set', 'title', gaTitlePrefix + gaTitle);
-//   ga('send', 'pageview')
-//   })
-// //////////////////////// END custom Google Analytics injection
+
+////////////////////////////////////////////////////////////////////////////////////
+// Custom Google Analytics injection. Modified from vue-ga
+////////////////////////////////////////////////////////////////////////////////////
+
+ let gaTitle = '(not set)'
+ let gaTitlePrefix = 'ICJIA Continuum | '
+ let gaPath = ''
+ let gaID = 'UA-10798495-21'
+
+function appendScript() {
+  const script = document.createElement('script')
+  script.async = true
+  script.src = 'https://www.google-analytics.com/analytics.js'
+  document.body.appendChild(script)
+}
+
+function stripTrailingSlash(str, min) {
+    if(str.substr(-1) === '/' && str.length > min) {
+        return str.substr(0, str.length - 1);
+    } else {
+        return str
+    }
+}
+
+if (!window.ga) {
+   appendScript()
+   window.ga = window.ga || function () {
+     (ga.q = ga.q || []).push(arguments)
+   }
+   ga.l = Number(new Date())
+   ga('create', gaID, 'auto')
+ }
 
 
+ router.afterEach(from  => {
 
-Vue.config.productionTip = true
+   let x = router.options.routes
+
+   for (var o = 0; o < x.length; o++){
+     //console.log(stripTrailingSlash(from.fullPath, 2))
+     if (x[o].path === stripTrailingSlash(from.fullPath, 1)) {
+       gaTitle = x[o].title
+       gaPath = x[o].path
+       //console.log(gaTitle)
+     }
+   }
+  ga('set', 'page', gaPath)
+  ga('set', 'title', gaTitlePrefix + gaTitle);
+  ga('send', 'pageview')
+  })
+
+
 
 /* eslint-disable no-new */
 new Vue({
