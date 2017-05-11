@@ -1,5 +1,9 @@
 const modal1 =
-`
+`<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur auctor augue erat, eget tincidunt risus pretium vel. Cras eget velit justo. Nam volutpat egestas euismod. Nulla facilisi. Mauris varius neque id odio faucibus, at tristique orci interdum. Morbi in ultrices diam. Phasellus elementum, elit ac hendrerit consectetur, justo ex porttitor odio, quis tempus nibh felis eget diam. Nam tristique purus nunc, ut congue mauris interdum eu. Sed at justo bibendum, lobortis tellus nec, placerat velit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque eget laoreet ipsum. Nullam gravida, justo vel hendrerit scelerisque, enim magna viverra eros, nec sodales arcu diam vel odio.
+</p>
+<p>
+  justo ex porttitor odio, quis tempus nibh felis eget diam. Nam tristique purus nunc, ut congue mauris interdum eu. Sed at justo bibendum, lobortis tellus nec, placerat velit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque eget laoreet ipsum. Nullam gravida, justo vel hendrerit scelerisque, enim magna viverra eros, nec sodales arcu diam vel odio.</p>
+
 
 <div class="panel-group" id="i0-accordion" role="tablist" aria-multiselectable="true">
   <div class="panel panel-default">
